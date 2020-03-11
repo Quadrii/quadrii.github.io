@@ -1,2 +1,0 @@
-# quadrii.github.io
-Testing
