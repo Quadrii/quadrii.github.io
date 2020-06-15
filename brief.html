@@ -1,0 +1,217 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Brief | OnTheGoTechnologies </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate/animate.min.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="stylesheet" href="css/fonts/font.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script type="text/javascript" src="css/bootstrap/js/hover.js"></script>
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.0/jquery.flexslider.js"></script>
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <script src="js/float-panel.js"></script>
+    <style>
+        #backtop {
+            position: fixed;
+            left: auto;
+            right: 20px;
+            top: auto;
+            bottom: 20px;
+            outline: none;
+            overflow: hidden;
+            color: #fff;
+            text-align: center;
+            background-color: rgba(49, 79, 96, 0.84);
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all 0.3s linear;
+            z-index: 999999;
+            opacity: 1;
+            display: none;
+        }
+        
+        #backtop:hover {
+            background-color: #208CAC;
+        }
+        
+        #backtop.mcOut {
+            opacity: 0;
+        }
+    </style>
+</head>
+<style>
+    label {
+        color: #000;
+        text-transform: uppercase;
+        font-family: lato;
+    }
+</style>
+
+<body>
+    <div id="backtop">&#9650;</div>
+    <div class="brief-banner">
+        <div class="contact-overlay">
+            <div class="main-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-7">
+                            <div class="first-div-content wow fadeInLeft animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                <small>
+                                    <marquee behavior="scroll" direction="left">
+                                      Welcome to OnTheGoTechnologies - Website development | Digital Marketing | Branding
+                                    </marquee> 
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-5">
+                            <div class="second-div-content  wow fadeInLeft animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInRight;">
+                                <ul>
+                                    <li class="number">CALL US: 09091577820</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <nav class="navbar navbar-inverse wow fadeInLeft animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInRight;">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle mobile-margin-btn" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                                <a class="navbar-brand" href="index.html"><img src="images/grey.png" style="object-fit: cover;height: 120px;"></a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav">
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right mobile-margin-btn" style="margin-top: 50px;">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle nav-a" data-toggle="dropdown">ABOUT<b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav_li"><a href="who-we-are.html">WHO WE ARE</a></li>
+                                            <li class="nav_li"><a href="our-process.html">OUR PROCESS</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="services.html" class="nav-a">SERVICES</a></li>
+                                    <li><a href="portfolio.html" class="nav-a">PORTFOLIO</a></li>
+                                    <li><a href="contact.html" class="nav-a">CONTACT</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                    </nav>
+                </div>
+            </div>
+            <h2 class="brief-h2">SEND US A BRIEF</h2>
+        </div>
+    </div>
+
+
+    <div class="brief-body">
+        <div class="brief-body-overla" style="padding: 30px;">
+            <div class="container">
+                <div class="form-div wow fadeInRight animated animated" data-wow-delay=".5s" style="background:#C48B3D;padding: 20px;visibility: visible; animation-delay: 0.7s; animation-name: fadeInRight;">
+                    <form name="" id="" class="form-horizontal" action="php_mailer.php" method="POST">
+                        <div class="form-group form_wrap">
+                            <div class="col-sm-12">
+                                <label for="sur" class="lab">Name:</label>
+                                <input type="text" class="form-control input" name="name" id="name" placeholder="Enter Your Name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group form_wrap">
+                            <div class="col-sm-12">
+                                <label for="sur" class="lab">Brand Name</label>
+                                <input type="text" class="form-control input" name="brand" id="brand" placeholder="Your Brand Name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group form_wrap">
+                            <div class="col-sm-12">
+                                <label for="sur" class="lab">Email Address:</label>
+                                <input type="email" class="form-control input" name="emailaddress" id="emailaddress" placeholder="Enter Valid Email Address" required>
+                            </div>
+                        </div>
+                        <!--/form-group-->
+
+                        <div class="form-group form_wrap">
+                            <div class="col-sm-12">
+                                <label for="sur" class="lab">What Do You want to do?</label>
+                                <select class="form-control" id="services" name="services">
+                    <option>Select</option>
+                    <option>Website Design</option>
+                    <option>Mobile App</option>
+                    <option>Logo Design</option>
+                    <option>Digital Marketing</option>
+                  </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group form_wrap">
+                            <div class="col-sm-12">
+                                <label for="message" class="lab">Tell Us about it</label>
+                                <textarea class="form-control input" id="message" name="message" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group form_wrap">
+                            <div class="col-sm-12">
+                                <label for="sur" class="lab"> What is the Budget? </label>
+                                <input type="text" class="form-control input" name="budget" placeholder="100,000" required>
+                            </div>
+                        </div>
+
+                        <div class="button-div" style="text-align: center;margin-top: 40px;">
+                            <a href="">
+                                <button class="work-buttons" type="submit">
+                  submit
+                </button>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer style="padding: 20px 0px;">
+            <div class="container">
+                <div class="row">
+                    <h1 class="give">give us a call (+234) 9091577820</h1>
+                    <ul style="text-align: center;">
+                        <li class="soci"><a href="https://www.facebook.com/greymatterng" class="socia" title="facebook" target="_blank"><i class="fa fa-facebook face" aria-hidden="true"></i></a></li>
+                        <li class="soci"><a href="https://twitter.com/GreyMatter_NG" class="socia" title="twitter" target="_blank"><i class="fa fa-twitter twit" aria-hidden="true"></i></a></li>
+                        <li class="soci"><a href=":https://www.instagram.com/greymatteragency/?hl=en" class="socia" title="instagram" target="_blank"><i class="fa fa-instagram insta" aria-hidden="true"></i></a></li>
+                    </ul>
+                    <p style="color:#fff;font-size: 15px;font-family: Museo;text-align: center;">
+                        copyright&copy;2020 OnTheGoTechnologies &nbsp;
+                        <a href="" style="color: #fff;">Privacy Policy</a> &nbsp;
+                        <a href="" style="color: #fff;">Terms And Conditions</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>

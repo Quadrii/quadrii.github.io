@@ -1,0 +1,64 @@
+@font-face {
+  font-family: GeosansLight;
+  src: url('GeosansLight.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: CaviarDreams;
+  src: url('CaviarDreams.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: ChampagneLimousinesB;
+  src: url('ChampagneLimousines Bold.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: ChampagneLimousines;
+  src: url('ChampagneLimousines.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Museo;
+  src: url('Museo100-Regular.otf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: montserratReg;
+  src: url('montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: montserratBold;
+  src: url('montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: opensans;
+  src: url('open-sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: opensanslight;
+  src: url('open-sans/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: latolight;
+  src: url('Open_Sans_lato/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: lato;
+  src: url('Open_Sans_lato/OpenSans-Regular.ttf');
+}
