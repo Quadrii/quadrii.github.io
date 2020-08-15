@@ -1,461 +1,78 @@
-<!doctype html>
-<html lang="en">
+<html>
+	<head>
+		<title>Currency Converter App</title>
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<!-- <div class="container">
+			<div class="header">
+				<h1>Currency Converter</h1>
+			</div>
+			<div class="date">2020/08/14</div>
+			<ul class="currencies">
+				<li class="currency" id="USD">
+					<img src="https://www.geonames.org/flags/1/us.gif" class="flag" alt="countries">
+					<div class="info">
+						<p class="input"><span class="currency-symbol">&#36;</span><input type="text" placeholder="0.0000"></p>
+						<p class="currency-name">USD - US DOLLAR</p>
+						<p class="base-currency-rate">1 USD = 1 USD</p>
+					</div>
+					<span class="close">&#10005;</span>
+				</li>
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+				<li class="currency" id="USD">
+					<img src="https://www.geonames.org/flags/1/us.gif" class="flag" alt="countries">
+					<div class="info">
+						<p class="input"><span class="currency-symbol">&#36;</span><input type="text" placeholder="0.0000"></p>
+						<p class="currency-name">USD - US DOLLAR</p>
+						<p class="base-currency-rate">1 USD = 1 USD</p>
+					</div>
+					<span class="close">&#10005;</span>
+				</li>
 
-    <title> Quadri Adisa | Home </title>
-    <!-- web fonts -->
-    <link href="//fonts.googleapis.com/css?family=Nunito:400,600,700,800,900&display=swap" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
-    <!-- //web fonts -->
-    <!-- Template CSS -->
-    <link rel="stylesheet" href="assets/css/style-starter.css">
-</head>
+				<li class="currency" id="USD">
+					<img src="https://www.geonames.org/flags/1/us.gif" class="flag" alt="countries">
+					<div class="info">
+						<p class="input"><span class="currency-symbol">&#36;</span><input type="text" placeholder="0.0000"></p>
+						<p class="currency-name">USD - US DOLLAR</p>
+						<p class="base-currency-rate">1 USD = 1 USD</p>
+					</div>
+					<span class="close">&#10005;</span>
+				</li>
 
-<body>
+				<li class="currency" id="USD">
+					<img src="https://www.geonames.org/flags/1/us.gif" class="flag" alt="countries">
+					<div class="info">
+						<p class="input"><span class="currency-symbol">&#36;</span><input type="text" placeholder="0.0000"></p>
+						<p class="currency-name">USD - US DOLLAR</p>
+						<p class="base-currency-rate">1 USD = 1 USD</p>
+					</div>
+					<span class="close">&#10005;</span>
+				</li>
+			</ul> -->
+			<!-- <ul class="add-currency-list">
+				<li data-currency="USD">
+					<img src="https://www.geonames.org/flags/1/us.gif" alt="" class="flag">
+					<span>USD</span>
+				</li>
+				<li data-currency="USD">
+					<img src="https://www.geonames.org/flags/1/us.gif" alt="" class="flag">
+					<span>USD</span>
+				</li>
+			</ul> -->
+			<!-- <button class="add-currency-btn">Add Currency</button>
+		</div> -->
 
-    <section class="w3l-bootstrap-header">
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-3 py-2">
-            <div class="container">
-                <a class="navbar-brand" href="index.html"> Quadri </a>
-                <!-- if logo is image enable this   
-    <a class="navbar-brand" href="#index.html">
-        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-    </a> -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon fa fa-bars"></span>
-      </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
-                        </li>
-
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-        </nav>
-    </section>
-    <!--  Main banner section -->
-    <section class="w3l-main-banner" id="home">
-        <div class="companies20-content">
-            <div class="companies-wrapper">
-                <div class="item">
-
-                    <div class="slider-info banner-view text-center">
-                        <div class="banner-info container">
-                            <img src="assets/images/Quadri.jpg" alt="about image" class="img-fluid">
-                            <h3 class="banner-text mt-5">
-                                Hello, I’m Quadri Adisa
-                            </h3>
-                            <p class="my-4 mb-5"> Web Developer </p><br>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--  //Main banner section -->
-    <section class="w3l-about ">
-        <div class="skills-bars py-5">
-            <div class="container py-md-3">
-                <div class="heading text-center mx-auto">
-                    <h3 class="head">Welcome To My Site</h3>
-                    <p class="my-3 head">
-                        Web Developer specializing in front-end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in HTML5, CSS3, SASS, SCSS, CMS, Bootstrap, Jquery, Javascript, SEO, Reactjs (Basic Knowledge), NPM. Strong
-                        background in project management and customer relations.
-                    </p>
-
-                </div>
-                <div class="row mt-5 pt-3">
-                    <div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
-                        <h4>Web Design</h4>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 50% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
-                        <h4>Marketing</h4>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 80% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4  col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
-                        <h4>Branding</h4>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 70% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4  col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
-                        <h4>Web Development</h4>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 90% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids ">
-                        <h4>SEO</h4>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 80% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="w3l-feature-3" id="features">
-        <div class="grid top-bottom">
-            <div class="container">
-                <div class="heading text-center mx-auto">
-                    <h3 class="head text-white">I'm Available For Hire</h3>
-                    <p class="my-3 head text-white">If a lasting impact is what you are searching for, we’ve got you covered all round. All digital products created lead to great experiences that are irrecoverable… </p>
-                </div>
-                <div class="middle-section grid-column text-center mt-5 pt-3">
-                    <div class="three-grids-columns">
-                        <span class="fa fa-paint-brush"></span>
-                        <h4>Web Design</h4>
-                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc</p>
-
-                    </div>
-                    <div class="three-grids-columns">
-                        <span class="fa fa-ils"></span>
-                        <h4>Marketing</h4>
-                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc</p>
-
-                    </div>
-                    <div class="three-grids-columns">
-                        <span class="fa fa-camera"></span>
-                        <h4>SEO</h4>
-                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc</p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="products-4" id="portfolio">
-        <!-- Products4 block -->
-        <div id="products4-block" class="text-center">
-            <div class="container">
-                <div class="heading text-center mx-auto mb-5">
-                    <h3 class="head">I Love What I Do</h3>
-                    <p class="my-3 head">
-                        Creative Front-end Developer with 3+ years of experience leveraging JavaScript to build responsive websites, and interactive features that drive business growth and improve UX.
-                    </p>
-                </div>
-                <input id="tab1" type="radio" name="tabs" checked>
-                <label class="tabtle" for="tab1">All Projects</label>
-
-
-
-                <section id="content1" class="tab-content text-left">
-                    <div class="d-grid grid-col-3">
-                        <div class="product">
-                            <a href="assets/images/portfolio/papisgrill.png" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                                <figure>
-                                    <img src="assets/images/portfolio/papisgrill.png" class="img-responsive" alt="" />
-                                </figure>
-                            </a>
-
-                        </div>
-                        <div class="product">
-                            <a href="assets/images/portfolio/newhavencare.png" data-lightbox="example-set" data-title="New Haven Care Recruitment is a social healthcare and nursing services provider supplying high quality care, support and nursing staff to a wide range of client groups which includes young adult, elderly people, people with learning disabilities, mental health illness, dementia, people with disability and others who require support.">
-                                <figure>
-                                    <img src="assets/images/portfolio/newhavencare.png" class="img-responsive" alt="" />
-                                </figure>
-                            </a>
-
-                        </div>
-                        <div class="product">
-                            <a href="assets/images/portfolio/soulage.png" data-lightbox="example-set" data-title="Soulage Foundation is a non-governmental organization founded in Nigeria in 2011. Soulage has served indigent patients living with sickle cell disorder by supporting them with free medical services through an established Health Maintenance Organization">
-                                <figure>
-                                    <img src="assets/images/portfolio/soulage.png" class="img-responsive" alt="" />
-                                </figure>
-                            </a>
-
-                        </div>
-                        <div class="product">
-                            <a href="assets/images/portfolio/strategos.png" data-lightbox="example-set" data-title="Strategos Company - Is a consulting company that work with fast-growing businesses ">
-                                <figure>
-                                    <img src="assets/images/portfolio/strategos.png" class="img-responsive" alt="" />
-                                </figure>
-                            </a>
-
-                        </div>
-                        <div class="product">
-                            <a href="assets/images/portfolio/quickship.png" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                                <figure>
-                                    <img src="assets/images/portfolio/quickship.png" class="img-responsive" alt="" />
-                                </figure>
-                            </a>
-
-                        </div>
-                        <div class="product">
-                            <a href="assets/images/portfolio/jesshill-consulting.png" data-lightbox="example-set" data-title="JESSHILL CONSULTING - Is a strategic, training and ideas generation company. ">
-                                <figure>
-                                    <img src="assets/images/portfolio/jesshill-consulting.png" class="img-responsive" alt="" />
-                                </figure>
-                            </a>
-
-                        </div>
-
-
-                    </div>
-                </section>
-
-                <section id="content2" class="tab-content text-left">
-                    <div class="d-grid grid-col-3">
-                        <div class="product">
-                            <a href="assets/images/g7.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                                <figure>
-                                    <img src="assets/images/g7.jpg" class="img-responsive" alt="" />
-                                </figure>
-                            </a>
-
-                        </div>
-                        <div class="product">
-                            <a href="assets/images/g8.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                                <figure>
-                                    <img src="assets/images/g8.jpg" class="img-responsive" alt="" />
-                                </figure>
-                            </a>
-
-                        </div>
-                        <div class="product">
-                            <a href="assets/images/g1.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                                <figure>
-                                    <img src="assets/images/g1.jpg" class="img-responsive" alt="" />
-                                </figure>
-                            </a>
-
-                        </div>
-                        <div class="product">
-                            <a href="assets/images/g2.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                                <figure>
-                                    <img src="assets/images/g2.jpg" class="img-responsive" alt="" />
-                                </figure>
-                            </a>
-
-                        </div>
-                        <div class="product">
-                            <a href="assets/images/g3.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                                <figure>
-                                    <img src="assets/images/g3.jpg" class="img-responsive" alt="" />
-                                </figure>
-                            </a>
-
-                        </div>
-                        <div class="product">
-                            <a href="assets/images/g4.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                                <figure>
-                                    <img src="assets/images/g4.jpg" class="img-responsive" alt="" />
-                                </figure>
-                            </a>
-
-                        </div>
-                    </div>
-                </section>
-
-                <section id="content3" class="tab-content text-left">
-                    <div class="d-grid grid-col-3">
-                        <div class="product">
-                            <a href="assets/images/g5.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                                <figure>
-                                    <img src="assets/images/g5.jpg" class="img-responsive" alt="" />
-                                </figure>
-                            </a>
-
-                        </div>
-                        <div class="product">
-                            <a href="assets/images/g6.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                                <figure>
-                                    <img src="assets/images/g6.jpg" class="img-responsive" alt="" />
-                                </figure>
-                            </a>
-
-                        </div>
-                        <div class="product">
-                            <a href="assets/images/g7.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                                <figure>
-                                    <img src="assets/images/g7.jpg" class="img-responsive" alt="" />
-                                </figure>
-                            </a>
-
-                        </div>
-                    </div>
-                </section>
-
-                <section id="content4" class="tab-content text-left">
-                    <div class="d-grid grid-col-3">
-                        <div class="product">
-                            <a href="assets/images/g8.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                                <figure>
-                                    <img src="assets/images/g8.jpg" class="img-responsive" alt="" />
-                                </figure>
-                            </a>
-
-                        </div>
-                        <div class="product">
-                            <a href="assets/images/g1.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                                <figure>
-                                    <img src="assets/images/g1.jpg" class="img-responsive" alt="" />
-                                </figure>
-                            </a>
-
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-        <!-- Products4 block -->
+		  <div class="container">
+    <div class="header">
+      <h1>Currency Converter</h1>
     </div>
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
-    <script src="assets/js/lightbox-plus-jquery.min.js"></script>
-    <section class="services-12" id="experience">
-        <div class="form-12-content">
-            <div class="container">
-                <div class="grid grid-column-2 ">
+    <div class="date"></div>
+    <ul class="currencies"></ul>
+    <button class="add-currency-btn"><i class="fas fa-long-arrow-alt-left"></i>Add Currency</button>
+    <ul class="add-currency-list"></ul>
+  </div>
 
-                    <div class="column1">
-                        <h3 class="mb-5">Experiences</h3>
-                        <div class="experience-top">
-                            <h5>2018 - now</h5>
-                            <h4>Fulltime Freelancer</h4>
-                            <p class="my-3 text-white">
-                                Freelancing at Upwork and Kuhustle.
-                            </p>
-                        </div>
-                        <div class="experience-top">
-                            <h5>2020</h5>
-                            <h4>Enterprise Design Thinking Co-creator</h4>
-                            <p class="my-3 text-white">Enterprise Design Thinking Co-creator Badge issued by IBM</p>
-                        </div>
-                        <div class="experience-top">
-                            <h5>2019 - 2020</h5>
-                            <h4>Web Designer at DeepOcean Consults</h4>
-                            <p class="my-3 text-white">Translated design team’s UX wireframes and mockups into responsive interactive features, using HTML/CSS and javascript</p>
-                        </div>
-                    </div>
-                    <div class="column2">
-                        <h3 class="mb-5">Education</h3>
-                        <div class="experience-top">
-                            <h5>2020</h5>
-                            <h4>Enterprise Design Thinking Practitioner</h4>
-                            <p class="my-3 text-white">Enterprise Design Thinking practitioner Badge issued by IBM</p>
-                        </div>
-                        <div class="experience-top">
-                            <h5>2018 - Till Date</h5>
-                            <h4>Bachelor of Science, Open University</h4>
-                            <p class="my-3 text-white">Studying Enterpreneur and Business Management in National Open University</p>
-                        </div>
-                        <div class="experience-top">
-                            <h5>2017</h5>
-                            <h4>Specialize Web Design, Greymatter Agency</h4>
-                            <p class="my-3 text-white">
-                                Handled the development of web application software Worked on different projects and completed these projects before deadlines Demonstrated effective and consistent technical support Hard-working.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- grids block 5 -->
-    <section class="w3l-footer-29-main" id="footer">
-        <div class="footer-29 text-center">
-            <div class="container">
-
-                <div class="main-social-footer-29">
-
-                    <a href="https://twitter.com/_quadri1" class="twitter" target="_blank">
-                        <span class="fa fa-twitter"></span>
-
-                    </a>
-                    <a href="https://www.linkedin.com/in/quadri-adisa-b44a36173/" class="linkedin" target="_blank">
-                        <span class="fa fa-linkedin"></span>
-                    </a>
-                </div>
-                <div class="bottom-copies text-center">
-                    <p class="copy-footer-29">© 2020 My Website. All rights reserved | Designed by <a href="#">Quadri</a></p>
-
-                </div>
-            </div>
-        </div>
-        <!-- move top -->
-        <button onclick="topFunction()" id="movetop" title="Go to top">
-              <span class="fa fa-angle-up"></span>
-                 </button>
-        <script>
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {
-                scrollFunction()
-            };
-
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    document.getElementById("movetop").style.display = "block";
-                } else {
-                    document.getElementById("movetop").style.display = "none";
-                }
-            }
-
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-        </script>
-        <!-- /move top -->
-    </section>
-    <!-- // grids block 5 -->
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
-    <!-- //footer-28 block -->
-    </section>
-
-    <script>
-        $(function() {
-            $('.navbar-toggler').click(function() {
-                $('body').toggleClass('noscroll');
-            })
-        });
-    </script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
-
-    <!-- Smooth scrolling -->
-
-
-
-</body>
-
+  	<script src="js/index.js"></script>
+	</body>
 </html>
-<!-- // grids block 5 -->
