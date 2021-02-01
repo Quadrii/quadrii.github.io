@@ -1,78 +1,39 @@
-<html>
-	<head>
-		<title>Currency Converter App</title>
-		<link rel="stylesheet" href="css/index.css">
-	</head>
-	<body>
-		<!-- <div class="container">
-			<div class="header">
-				<h1>Currency Converter</h1>
-			</div>
-			<div class="date">2020/08/14</div>
-			<ul class="currencies">
-				<li class="currency" id="USD">
-					<img src="https://www.geonames.org/flags/1/us.gif" class="flag" alt="countries">
-					<div class="info">
-						<p class="input"><span class="currency-symbol">&#36;</span><input type="text" placeholder="0.0000"></p>
-						<p class="currency-name">USD - US DOLLAR</p>
-						<p class="base-currency-rate">1 USD = 1 USD</p>
-					</div>
-					<span class="close">&#10005;</span>
-				</li>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" integrity="sha384-3fdgwJw17Bi87e1QQ4fsLn4rUFqWw//KU0g8TvV6quvahISRewev6/EocKNuJmEw" crossorigin="anonymous">
+	<title>Github Finder App</title>
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-primary mb-3">
+		<div class="container">
+			<a href="#" class="navbar-brand">Github Finder</a>
+		</div>
+	</nav>
+	<div class="container searchContainer">
+		<div class="search card card-body">
+			<h1>Search Username</h1>
+			<p>Enter a username to fetch a user profile and repo</p>
+			<input type="text" id="searchUser" class="form-control" placeholder="GitHub Username...">
+		</div>
+		<br>
+		<div id="profile"></div>
+	</div>
 
-				<li class="currency" id="USD">
-					<img src="https://www.geonames.org/flags/1/us.gif" class="flag" alt="countries">
-					<div class="info">
-						<p class="input"><span class="currency-symbol">&#36;</span><input type="text" placeholder="0.0000"></p>
-						<p class="currency-name">USD - US DOLLAR</p>
-						<p class="base-currency-rate">1 USD = 1 USD</p>
-					</div>
-					<span class="close">&#10005;</span>
-				</li>
+	<footer class="mt-5 p-3 text-center bg-light">
+		GitHub Finder &copy;
+	</footer>
 
-				<li class="currency" id="USD">
-					<img src="https://www.geonames.org/flags/1/us.gif" class="flag" alt="countries">
-					<div class="info">
-						<p class="input"><span class="currency-symbol">&#36;</span><input type="text" placeholder="0.0000"></p>
-						<p class="currency-name">USD - US DOLLAR</p>
-						<p class="base-currency-rate">1 USD = 1 USD</p>
-					</div>
-					<span class="close">&#10005;</span>
-				</li>
 
-				<li class="currency" id="USD">
-					<img src="https://www.geonames.org/flags/1/us.gif" class="flag" alt="countries">
-					<div class="info">
-						<p class="input"><span class="currency-symbol">&#36;</span><input type="text" placeholder="0.0000"></p>
-						<p class="currency-name">USD - US DOLLAR</p>
-						<p class="base-currency-rate">1 USD = 1 USD</p>
-					</div>
-					<span class="close">&#10005;</span>
-				</li>
-			</ul> -->
-			<!-- <ul class="add-currency-list">
-				<li data-currency="USD">
-					<img src="https://www.geonames.org/flags/1/us.gif" alt="" class="flag">
-					<span>USD</span>
-				</li>
-				<li data-currency="USD">
-					<img src="https://www.geonames.org/flags/1/us.gif" alt="" class="flag">
-					<span>USD</span>
-				</li>
-			</ul> -->
-			<!-- <button class="add-currency-btn">Add Currency</button>
-		</div> -->
 
-		  <div class="container">
-    <div class="header">
-      <h1>Currency Converter</h1>
-    </div>
-    <div class="date"></div>
-    <ul class="currencies"></ul>
-    <button class="add-currency-btn"><i class="fas fa-long-arrow-alt-left"></i>Add Currency</button>
-    <ul class="add-currency-list"></ul>
-  </div>
 
-  	<script src="js/index.js"></script>
-	</body>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="js/github.js"></script>
+	<script src="js/ui.js"></script>
+	<script src="js/app.js"></script>
+</body>
 </html>
