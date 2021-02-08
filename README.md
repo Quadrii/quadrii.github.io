@@ -1,2 +1,2 @@
-# currencyConverter
-A currency converter APP to convert currency to any currency of your choice in the world.
+# githubFinder
+Github finder App. Search for a github user to know more about their github account/info.
