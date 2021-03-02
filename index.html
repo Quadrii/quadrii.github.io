@@ -1,36 +1,285 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" class="rel">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>Scientific Calculator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/c52819d552.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/mobile.css">
+	<title>Task</title>
+	<style>
+	.info-wrap{
+  display: grid; 
+  margin: auto; 
+  margin-top: calc(50vh - 170px); 
+  width: 300px; height: 200px; 
+}
+fieldset{
+  border: 10px solid #fff; 
+  box-sizing: border-box; 
+  grid-area: 1 / 1; 
+  padding: 20px; 
+}
 
+legend{
+  font: 15pt/0 'Averia Serif Libre'; 
+  margin: auto; 
+  padding: 0 4px; 
+} 
+</style>
 </head>
-
 <body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
 
-    <div class="calculator">
-        <div class="calc-container">
-            <div class="output">
-                <div class="operation">
-                    <div class="value"></div>
-                </div>
-                <div class="result">
-                    <div class="value">0</div>
-                </div>
-            </div>
-            <div class="input">
+  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">ABOUT US</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">CAREERS</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">PRODUCTS</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">CONTACT US</a>
+		      </li>
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		        <div class="input-group mb-3">
+				  <input type="text" class="form-control" placeholder="Search">
+				  <div class="input-group-append">
+				    <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
+				  </div>
+				</div>
+		    </form>
+  		</div>
+	</nav>
+	<div class="continer-wrap mb-5">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="firstCol-wrap">
+					<span class="imgSpan"><img src="images/taskLogo.png" alt=""></span>
+					<span class="companyName">strickall Group</span>
+					<div class="info-wrap mb-3 mt-4">
+						
+					   <fieldset>
+					   		<legend>why choose us</legend>
+					   		<div class="float-left">
+					   			<i class="fas fa-home"></i>
+					   		</div>
+					   		<div class="float-right ourEthics">
+					   		<ul>
+					   			<li>Professionalism and details</li>
+					   			<li>20 years plus service oriented experience</li>
+					   			<li>Competent worldwide</li>
+					   			<li>Flexible and affordable services</li>
+					   			<li>100% eco friendly services</li>
+					   			<li>100% clean satisfaction guaranteed</li>
+					   			<li>100% quick resource free</li>
+					   		</ul>
+					   	</div>
+					   	</fieldset>
+					  	
+					</div>
+					<div class="videoWrap mb-5">
+						<span class="yVideo"><img src="images/youtube.png" alt=""></span>
+						<span class="imgCaption">YouTube Videos</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="location">
+					<div class="locationOverlay">
+						<div class="locationDetails">
+							<div class="d-flex justify-content-between">
+								<div class="info">
+									<span>300+</span>
+									<span>provided services</span>
+								</div>
+								<div class="info">
+									<span>150+</span>
+									<span>satisfied client</span>
+								</div>
+								<div class="info">
+									<span> certified in 5+</span>
+									<span>countries</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="card" style="width: 10rem;background-color: #eee;height: 300px">
+						  	<div class="card-body">
+						    	<h2 class="card-title">strickall</h2>
+						    	<h5 class="card-titles">pest control</h5>
+						    	<p class="card-text">Environmental friendly pest solutions.Commercial and residential</p>
+						  	</div>
+							<img src="images/Cleaner.jpg" class="card-img-top" alt="...">
+							<div class="SPAN">
+							  	<span class="d-block float-left left-span">
+							  		<i class="fas fa-briefcase"></i>
+							  		<p class="text">
+							  			commercial facilities
+							  		</p>
+							  	</span>
+							  	<span class="d-block float-right left-span">
+							  		<i class="fas fa-home homeIcon"></i>
+							  		<p class="text">
+							  			residential properties
+							  		</p>
+							  	</span>
+					  		</div>
+						</div>
+					</div>
+					
+					<div class="col">
+						<div class="card" style="width: 10rem;background-color: #a569bd;height: 300px">
+						  <div class="card-body">
+						    <h2 class="card-title">strickall</h2>
+						    <h5 class="card-titles">facility management</h5>
+						    <p class="card-text">Real Estate and General facility management</p>
+						  </div>
+					  	  <img src="images/facility.jpg" class="card-img-top" alt="...">
+						  <div class="SPAN">
+						  	<span class="d-block float-left left-span">
+						  		
+						  	</span>
+						  	<span class="d-block float-right left-span">
 
-            </div>
-        </div>
-    </div>
-
-    <script src="js/index.js"></script>
+						  	</span>
+						  </div>
+						</div>
+					</div>
+					
+					<div class="col">
+						<div class="card" style="width: 10rem;background-color:  #2ecc71;height: 300px">
+					  <div class="card-body">
+					    <h2 class="card-title">strickaly</h2>
+					    <h5 class="card-titles">klean</h5>
+					    <p class="card-text">General cleaning | Supply | pest control</p>
+					  </div>
+					  <img src="images/klean.jpg" class="card-img-top" alt="...">
+					  <div class="SPAN">
+					  	<p>
+					  		LIVE FREE OF DIRTS
+					  	</p>
+					  </div>
+					</div>
+					</div>
+					
+					<div class="col">
+						<div class="card" style="width: 10rem;background-color:  #ccd1d1;height: 300px">
+					  <div class="card-body">
+					    <h2 class="card-title">strickall</h2>
+					    <h5 class="card-titles">limited</h5>
+					    <p class="card-text">Environmental friendly pest solutions.Commercial and residential</p>
+					  </div>
+					</div>
+					</div>
+					
+				</div>
+				<div class="client mb-4">
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="clientUl">
+								<li class="client-images">
+									<img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg" alt="">
+								</li>
+								<li class="client-images">
+									<img src="http://www.webcoderskull.com/img/logo.png" alt="">
+								</li>
+								<li class="client-images">
+									<img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg" alt="">
+								</li>
+								<li class="client-images hideMobile">
+									<img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg" alt="">
+								</li>
+								<li class="client-images hideMobile">
+									<img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg" alt="">
+								</li>
+								<li class="client-images hideMobile hidePad">
+									<img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg" alt="">
+								</li>
+								<li class="client-images hideMobile hidePad">
+									<img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg" alt="">
+								</li>
+								<li class="client-images hideMobile hidePad">
+									<img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg" alt="">
+								</li>
+								<li class="client-images hideMobile hidePad">
+									<img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg" alt="">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="fixed-bottom">
+		<footer class="">
+			<div class="container">
+				<div class="row">
+					<div class="col col-one footer-form">
+						<span>Choose another country or region</span>
+						<form action="">
+							<div class="form-group">
+		                        <select class="form-control" id="exampleFormControlSelect1">
+		                        	<option>Nigeria</option>
+								    <option>Togo</option>
+								    <option>Ghana</option>
+								    <option>SouthAfrica</option>
+								    <option>Namibia</option>
+		    					</select>
+		  					</div>
+						</form>
+					</div>
+					<div class="col">
+						<div class="fCol-two">
+							<span class="d-block"> Press Release | CSR | Privacy Policy | Term Of Use | Contact</span>
+							<span>&#169; Shatal Coup 2000 - All rights Reserved</span>
+						</div>
+					</div>
+					<div class="col">
+						<div class="socials">
+							<ul>
+								<li>
+									<i class="fab fa-linkedin-in"></i>
+								</li>
+								<li>
+									<i class="fab fa-facebook-f"></i>
+								</li>
+								<li>
+									<i class="fab fa-twitter"></i>
+								</li>
+								<li>
+									<i class="fab fa-youtube"></i>
+								</li>
+								<li>
+									<i class="fab fa-instagram"></i>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</div>
 </body>
-
-
 </html>
