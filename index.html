@@ -1,285 +1,477 @@
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="https://kit.fontawesome.com/c52819d552.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/mobile.css">
-	<title>Task</title>
-	<style>
-	.info-wrap{
-  display: grid; 
-  margin: auto; 
-  margin-top: calc(50vh - 170px); 
-  width: 300px; height: 200px; 
-}
-fieldset{
-  border: 10px solid #fff; 
-  box-sizing: border-box; 
-  grid-area: 1 / 1; 
-  padding: 20px; 
-}
-
-legend{
-  font: 15pt/0 'Averia Serif Libre'; 
-  margin: auto; 
-  padding: 0 4px; 
-} 
-</style>
-</head>
-<body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    		<span class="navbar-toggler-icon"></span>
-  		</button>
-
-  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">ABOUT US</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">CAREERS</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">PRODUCTS</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">CONTACT US</a>
-		      </li>
-		    </ul>
-		    <form class="form-inline my-2 my-lg-0">
-		        <div class="input-group mb-3">
-				  <input type="text" class="form-control" placeholder="Search">
-				  <div class="input-group-append">
-				    <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
-				  </div>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Herdro Company </title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		 <script src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<script src="https://kit.fontawesome.com/c52819d552.js" crossorigin="anonymous"></script>
+		<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+   		<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,200,700,800,900' rel='stylesheet' type='text/css'>
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="home" class="header scroll">
+			<div class="container">
+				<div class="logo">
+					<a href="#"><img src="images/herdro.png" title="HERDRO" class="logoStyle"/></a>
 				</div>
-		    </form>
-  		</div>
-	</nav>
-	<div class="continer-wrap mb-5">
-		<div class="row">
-			<div class="col-md-4">
-				<div class="firstCol-wrap">
-					<span class="imgSpan"><img src="images/taskLogo.png" alt=""></span>
-					<span class="companyName">strickall Group</span>
-					<div class="info-wrap mb-3 mt-4">
-						
-					   <fieldset>
-					   		<legend>why choose us</legend>
-					   		<div class="float-left">
-					   			<i class="fas fa-home"></i>
-					   		</div>
-					   		<div class="float-right ourEthics">
-					   		<ul>
-					   			<li>Professionalism and details</li>
-					   			<li>20 years plus service oriented experience</li>
-					   			<li>Competent worldwide</li>
-					   			<li>Flexible and affordable services</li>
-					   			<li>100% eco friendly services</li>
-					   			<li>100% clean satisfaction guaranteed</li>
-					   			<li>100% quick resource free</li>
-					   		</ul>
-					   	</div>
-					   	</fieldset>
-					  	
-					</div>
-					<div class="videoWrap mb-5">
-						<span class="yVideo"><img src="images/youtube.png" alt=""></span>
-						<span class="imgCaption">YouTube Videos</span>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-8">
-				<div class="location">
-					<div class="locationOverlay">
-						<div class="locationDetails">
-							<div class="d-flex justify-content-between">
-								<div class="info">
-									<span>300+</span>
-									<span>provided services</span>
-								</div>
-								<div class="info">
-									<span>150+</span>
-									<span>satisfied client</span>
-								</div>
-								<div class="info">
-									<span> certified in 5+</span>
-									<span>countries</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<div class="card" style="width: 10rem;background-color: #eee;height: 300px">
-						  	<div class="card-body">
-						    	<h2 class="card-title">strickall</h2>
-						    	<h5 class="card-titles">pest control</h5>
-						    	<p class="card-text">Environmental friendly pest solutions.Commercial and residential</p>
-						  	</div>
-							<img src="images/Cleaner.jpg" class="card-img-top" alt="...">
-							<div class="SPAN">
-							  	<span class="d-block float-left left-span">
-							  		<i class="fas fa-briefcase"></i>
-							  		<p class="text">
-							  			commercial facilities
-							  		</p>
-							  	</span>
-							  	<span class="d-block float-right left-span">
-							  		<i class="fas fa-home homeIcon"></i>
-							  		<p class="text">
-							  			residential properties
-							  		</p>
-							  	</span>
-					  		</div>
-						</div>
-					</div>
-					
-					<div class="col">
-						<div class="card" style="width: 10rem;background-color: #a569bd;height: 300px">
-						  <div class="card-body">
-						    <h2 class="card-title">strickall</h2>
-						    <h5 class="card-titles">facility management</h5>
-						    <p class="card-text">Real Estate and General facility management</p>
-						  </div>
-					  	  <img src="images/facility.jpg" class="card-img-top" alt="...">
-						  <div class="SPAN">
-						  	<span class="d-block float-left left-span">
-						  		
-						  	</span>
-						  	<span class="d-block float-right left-span">
-
-						  	</span>
-						  </div>
-						</div>
-					</div>
-					
-					<div class="col">
-						<div class="card" style="width: 10rem;background-color:  #2ecc71;height: 300px">
-					  <div class="card-body">
-					    <h2 class="card-title">strickaly</h2>
-					    <h5 class="card-titles">klean</h5>
-					    <p class="card-text">General cleaning | Supply | pest control</p>
-					  </div>
-					  <img src="images/klean.jpg" class="card-img-top" alt="...">
-					  <div class="SPAN">
-					  	<p>
-					  		LIVE FREE OF DIRTS
-					  	</p>
-					  </div>
-					</div>
-					</div>
-					
-					<div class="col">
-						<div class="card" style="width: 10rem;background-color:  #ccd1d1;height: 300px">
-					  <div class="card-body">
-					    <h2 class="card-title">strickall</h2>
-					    <h5 class="card-titles">limited</h5>
-					    <p class="card-text">Environmental friendly pest solutions.Commercial and residential</p>
-					  </div>
-					</div>
-					</div>
-					
-				</div>
-				<div class="client mb-4">
-					<div class="row">
-						<div class="col-md-12">
-							<ul class="clientUl">
-								<li class="client-images">
-									<img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg" alt="">
-								</li>
-								<li class="client-images">
-									<img src="http://www.webcoderskull.com/img/logo.png" alt="">
-								</li>
-								<li class="client-images">
-									<img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg" alt="">
-								</li>
-								<li class="client-images hideMobile">
-									<img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg" alt="">
-								</li>
-								<li class="client-images hideMobile">
-									<img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg" alt="">
-								</li>
-								<li class="client-images hideMobile hidePad">
-									<img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg" alt="">
-								</li>
-								<li class="client-images hideMobile hidePad">
-									<img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg" alt="">
-								</li>
-								<li class="client-images hideMobile hidePad">
-									<img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg" alt="">
-								</li>
-								<li class="client-images hideMobile hidePad">
-									<img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg" alt="">
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+				 <nav class="top-nav">
+					<ul class="top-nav">
+						<li class="active"><a href="#home" class="scroll">Home</a></li>
+						<li class="page-scroll"><a href="#about" class="scroll">About</a></li>
+						<li class="page-scroll"><a href="#services" class="scroll">Services</a></li>
+						<li class="page-scroll"><a href="#port" class="scroll">Protfolio</a></li>
+						<li class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>
+					</ul>
+					<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+				</nav>
+				<div class="clearfix"> </div>
 			</div>
 		</div>
-	</div>
-	
-	<div class="fixed-bottom">
-		<footer class="">
+		<div class="slider">
+			<script src="js/responsiveslides.min.js"></script>
+			  <script>
+			    $(function () {
+			      $("#slider3").responsiveSlides({
+			        manualControls: '#slider3-pager',
+			      });
+			    });
+			  </script>
+			    <ul class="rslides" id="slider3">
+			      <li>
+			      	<img src="images/sliderThree.jpg" alt="">
+			      	<div class="slid-info">
+			      		<h1>Creative Solutions</h1>
+			      		<p>Good that Lesser . Starts heaven over set May Gathering , is all land Cant You're after light our darkness, thing isnet.</p>
+			      		<a class="slid-btn" href="#">Read More</a>
+			      	</div>
+			      </li>
+
+			      <li><img src="images/sliderOne.jpg" alt="">
+			      	<div class="slid-info">
+			      		<h1>Creative Solutions</h1>
+			      		<p>Good that Lesser . Starts heaven over set May Gathering , is all land Cant You're after light our darkness, thing isnet.</p>
+			      		<a class="slid-btn" href="#">Read More</a>
+			      	</div>
+			      </li>
+			    </ul>
+			    <!-- Slideshow -->
+			    <ul id="slider3-pager">
+			      <li><a href="#"><span> </span></a></li>
+			      <li><a href="#"><span> </span></a></li>
+			      <li><a href="#"><span> </span></a></li>
+			    </ul>
+		   </div>
+		<!-----//End-slider---->
+		<!----start-about----->
+		<div id="about" class="about">
 			<div class="container">
-				<div class="row">
-					<div class="col col-one footer-form">
-						<span>Choose another country or region</span>
-						<form action="">
-							<div class="form-group">
-		                        <select class="form-control" id="exampleFormControlSelect1">
-		                        	<option>Nigeria</option>
-								    <option>Togo</option>
-								    <option>Ghana</option>
-								    <option>SouthAfrica</option>
-								    <option>Namibia</option>
-		    					</select>
-		  					</div>
+				<h2>About</h2>
+				<p class="wellcome-note-head"><label>We are a full Services Digital Agency. </label>We Design and develop <span>Websites,</span><span>Applications,</span><span>Mobile Solutions,</span> and more</p>
+				<p class="wellcome-note-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus velit quis risus eleifend bibendum. Aenean dictum felis in eros ultrices eleifend. Phasellus ultrices congue feugiat. Vestibulum sed pretium sem, sed venenatis nibh. Phasellus nec tincidunt neque. Proin accumsan sagittis lacus ut lobortis.Proin molestie cursus tortor in eleifend. Suspendisse potenti.</p>
+			<!----start-about-grids----->
+			<div class="about-grids">
+				<div class="col-md-3 about-grid">
+					<span class="about-icon"><i class="far fa-lightbulb"></i></span>
+					<h3><a href="#"><label>Reflexion</label> idea</a></h3>
+					<p>velit est, tempus in nulla sed, convallis porttitor lacus. Curabitur sed egestas eros. Donec convallis ligula eu diam elementum, quis tempor sem tincidunt.</p>
+				</div>
+				<div class="col-md-3 about-grid">
+					<span class="about-icon1"><i class="fas fa-glasses"></i></span>
+					<h3><a href="#"><label>Conception</label> Design</a></h3>
+					<p>velit est, tempus in nulla sed, convallis porttitor lacus. Curabitur sed egestas eros. Donec convallis ligula eu diam elementum, quis tempor sem tincidunt.</p>
+				</div>
+				<div class="col-md-3 about-grid">
+					<span class="about-icon2"><i class="fas fa-code"></i></span>
+					<h3><a href="#"><label>Codage</label> Develop</a></h3>
+					<p>velit est, tempus in nulla sed, convallis porttitor lacus. Curabitur sed egestas eros. Donec convallis ligula eu diam elementum, quis tempor sem tincidunt.</p>
+				</div>
+				<div class="col-md-3 about-grid">
+					<span class="about-icon3"><i class="fas fa-redo-alt"></i></span>
+					<h3><a href="#"><label>Efficacite</label> Rapidite</a></h3>
+					<p>velit est, tempus in nulla sed, convallis porttitor lacus. Curabitur sed egestas eros. Donec convallis ligula eu diam elementum, quis tempor sem tincidunt.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			</div>
+			<!----//End-about-grids----->
+		</div>
+		<!----//End-about----->
+		<!----start-services---->
+		<div id="services" class="services">
+			<div class="container">
+				<h3>Services<label> </label></h3>
+			<!----start-servicves-list---->
+			<div class="services-list text-center">
+				<ul class="list-unstyled list-inline">
+					<li>
+						<a href="#"><span class="service-icon"> </span><label>Mobile</label></a>
+					</li>
+					<li>
+						<a href="#"><span class="service-icon1"> </span><label>Design</label></a>
+					</li>
+					<li>
+						<a href="#"><span class="service-icon2"> </span><label>Social</label></a>
+					</li>
+					<li>
+						<a href="#"><span class="service-icon3"> </span><label>E-commerce</label></a>
+					</li>
+					<li>
+						<a href="#"><span class="service-icon4"> </span><label>Database</label></a>
+					</li>
+					<li>
+						<a href="#"><span class="service-icon5"> </span><label>Communications</label></a>
+					</li>
+					<li>
+						<a href="#"><span class="service-icon6"> </span><label>Technology</label></a>
+					</li>
+				</ul>
+			</div>
+			<!----//End-servicves-list---->
+			</div>
+		</div>
+		<!----//End-services---->
+		<!----start-portfolio----->
+		<div id="port" class="portfolio portfolio-box">
+			<div class="container">
+				<h3>Portfolio<label> </label></h3>
+			<!----start-portfolio---->
+         <div id="port" class="container portfolio-main">
+	        	<!---- start-portfolio-script----->
+					<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+						$(function () {
+							var filterList = {
+								init: function () {
+
+									// MixItUp plugin
+									// http://mixitup.io
+									$('#portfoliolist').mixitup({
+										targetSelector: '.portfolio',
+										filterSelector: '.filter',
+										effects: ['fade'],
+										easing: 'snap',
+										// call the hover effect
+										onMixEnd: filterList.hoverEffect()
+									});
+
+								},
+								hoverEffect: function () {
+									// Simple parallax effect
+									$('#portfoliolist .portfolio').hover(
+										function () {
+											$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+											$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
+										},
+										function () {
+											$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+											$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
+										}
+									);
+
+								}
+
+							};
+							// Run the show!
+							filterList.init();
+						});
+					</script>
+					<!----//End-portfolio-script----->
+					<ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="app card icon logo web">All</span> /</li>
+						<li><span class="filter" data-filter="app">WEB DESIGN</span> /</li>
+						<li><span class="filter" data-filter="card">WEB APP</span> /</li>
+						<li><span class="filter" data-filter="icon">MOBILE</span> /</li>
+						<li><span class="filter" data-filter="app"></span></li>
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio logo1 mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                <div class="port-info">
+		                	<h4><a href="#"> Flat Pixel</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#">radoslav holan</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>
+					<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                <div class="port-info">
+		                	<h4><a href="#">Apemanboards</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#"> Flat Pixel</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#"> radoslav holan</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p6.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#">Apemanboards</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p7.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#"> Flat Pixel</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p8.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#">radoslav holan</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#"> Apemanboards</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>
+					<div class="clearfix"> </div>
+					<a class="more-ports text-center" href="#"><span> </span></a>
+				</div>
+		</div>
+		</div>
+		<div class="clearfix"> </div>
+		</div>
+         <!----//End-portfolio---->
+         <!-----start-testmonials---->
+         <div class="testmonials">
+         	<div class="container">
+	         	<div class="client-pic col-md-4">
+	         		<img src="images/client.jpg" title="name" />
+	         	</div>
+	         	<div class="client-sys col-md-8">
+	         		<!----start-testmonial-slider---->
+	         		<link rel="stylesheet" href="css/testmonial.css">
+  					<script src="js/prefixfree.min.js"></script>
+	         		<!----//End-testmonial-slider---->
+	         		<div class="gallery autoplay items-3">
+					    <div id="item-1" class="control-operator"></div>
+					    <div id="item-2" class="control-operator"></div>
+					    <div id="item-3" class="control-operator"></div>
+					    <figure class="item">
+					      <h3>WHAT CLIENTS SAY :</h3>
+					      <p class="client-says"><span class="left-quit"> &#8220;</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum feugiat justo, quis ultrices orci. Fusce semper turpis blandit, feugiat diam vitae, lobortis sapien. In nec quam purus. Curabitur malesuada, nisi eu facilisis fringilla, lorem quam fermentum arcu, eu vestibulum orci ligula non erat. Quisque mi justo, ornare quis nunc vitae, semper consectetur augue. Integer mollis ipsum a dui tincidunt varius. Proin laoreet mattis magna <span class="right-quit"> &#8221;</span></p>
+					    </figure>
+					    <figure class="item">
+					      <h3>WHAT CLIENTS SAY :</h3>
+					     <p class="client-says"><span class="left-quit"> &#8220;</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum feugiat justo, quis ultrices orci. Fusce semper turpis blandit, feugiat diam vitae, lobortis sapien. In nec quam purus. Curabitur malesuada, nisi eu facilisis fringilla, lorem quam fermentum arcu, eu vestibulum orci ligula non erat. Quisque mi justo, ornare quis nunc vitae, semper consectetur augue. Integer mollis ipsum a dui tincidunt varius. Proin laoreet mattis magna <span class="right-quit"> &#8221;</span></p>
+					    </figure>
+					    <figure class="item">
+					      <h3>WHAT CLIENTS SAY :</h3>
+					      <p class="client-says"><span class="left-quit"> &#8220;</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum feugiat justo, quis ultrices orci. Fusce semper turpis blandit, feugiat diam vitae, lobortis sapien. In nec quam purus. Curabitur malesuada, nisi eu facilisis fringilla, lorem quam fermentum arcu, eu vestibulum orci ligula non erat. Quisque mi justo, ornare quis nunc vitae, semper consectetur augue. Integer mollis ipsum a dui tincidunt varius. Proin laoreet mattis magna <span class="right-quit"> &#8221;</span></p>
+					    </figure>
+					    <div class="clearfix"> </div>
+					    <div class="controls">
+					      <a href="#item-1" class="control-button"><span> </span></a>
+					      <a href="#item-2" class="control-button"><span> </span></a>
+					      <a href="#item-3" class="control-button"><span> </span></a>
+					    </div>
+					    <div class="clearfix"> </div>
+				  </div>
+	         	</div>
+	         	<div class="clearfix"> </div>
+         	 </div>
+         </div>
+
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		<div class="brand-carsuals">
+			<h4 class="headings">OUR CLIENTS</h4>
+			<ul id="flexiselDemo3">
+			    <li><img src="images/b-logo.png" /></li>
+			    <li><img src="images/b-logo.png" /></li>
+			    <li><img src="images/b-logo.png" /></li>
+			    <li><img src="images/b-logo.png" /></li>
+			</ul>
+			<script type="text/javascript">
+				$(window).load(function() {
+				    $("#flexiselDemo3").flexisel({
+				        visibleItems: 5,
+				        animationSpeed: 1000,
+				        autoPlay: true,
+				        autoPlaySpeed: 3000,
+				        pauseOnHover: true,
+				        enableResponsiveBreakpoints: true,
+				        responsiveBreakpoints: {
+				            portrait: {
+				                changePoint:480,
+				                visibleItems: 1
+				            },
+				            landscape: {
+				                changePoint:640,
+				                visibleItems: 2
+				            },
+				            tablet: {
+				                changePoint:768,
+				                visibleItems: 3
+				            }
+				        }
+				    });
+
+				});
+			</script>
+		</div>
+		<!-----//End-brand-carsuals------>
+
+		<!----start-contact---->
+		<div id="contact" class="contact">
+			<div class="container">
+				 <h3>Contact<label> </label></h3>
+				<div class="contact-grids">
+					<div class="col-md-6 contact-grid-left">
+						<form method="post" action="contact-post.html">
+							<input type="text" value="Name " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+							<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+							<input type="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
+							<textarea onfocus="if(this.value == 'Your Message here....') this.value='';" onblur="if(this.value == '') this.value='Your Message here....;">Your Message here....</textarea>
+							<p class="conditions"> <span></span></p>
+							<span class="submit-btn"><input type="submit" value="Send"></span>
 						</form>
 					</div>
-					<div class="col">
-						<div class="fCol-two">
-							<span class="d-block"> Press Release | CSR | Privacy Policy | Term Of Use | Contact</span>
-							<span>&#169; Shatal Coup 2000 - All rights Reserved</span>
+					<!----->
+					<div class="col-md-6 contact-grid-right">
+						<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Addo%20Road,%20Ajah,%20Lagos&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://embedgooglemap.net/maps/91"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet turpis a nibh feugiat, nec viverra arcu lacinia.</p>
+						<div class="col-md-4">
+							<h5>Phone</h5>
+							<span>[81]123456789</span>
 						</div>
-					</div>
-					<div class="col">
-						<div class="socials">
-							<ul>
-								<li>
-									<i class="fab fa-linkedin-in"></i>
-								</li>
-								<li>
-									<i class="fab fa-facebook-f"></i>
-								</li>
-								<li>
-									<i class="fab fa-twitter"></i>
-								</li>
-								<li>
-									<i class="fab fa-youtube"></i>
-								</li>
-								<li>
-									<i class="fab fa-instagram"></i>
-								</li>
-							</ul>
+						<div class="col-md-4">
+							<h5>Address</h5>
+							<span>2014 Street,</span>
+							<span>San francisco California,</span>
+							<span>United States,</span>
 						</div>
+						<div class="col-md-4">
+							<h5>Email</h5>
+							<span><a href="#">info@Herdrocomapny.com</a></span>
+						</div>
+						<div class="clearfix"> </div>
 					</div>
+					<div class="clearfix"> </div>
 				</div>
+				<!-----start-contact-social---->
+				<ul class="list-unstyled list-inline contact-social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				</ul>
+				<!-----//End-contact-social---->
+		</div>
+		</div>
+		<!----//End-contact---->
+		<!----start-copy-right--->
+		<div class="copy-right">
+			<div class="container">
+				<p>Website by <a href="#">Herdro Company</a></p>
+					<script type="text/javascript">
+				$(document).ready(function() {
+					/*
+					var defaults = {
+			  			containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear'
+			 		};
+					*/
+
+					$().UItoTop({ easingType: 'easeOutQuart' });
+
+				});
+			</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 			</div>
-		</footer>
-	</div>
-	
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</div>
-</body>
+		</div>
+		<!----//End-copy-right--->
+		<!----//End-container------>
+	</body>
 </html>
+
