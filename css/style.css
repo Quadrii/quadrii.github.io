@@ -7,7 +7,9 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
-
+.teamCol {
+  text-align: center;
+}
 .nav-link {
   color: #000;
 }
