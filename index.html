@@ -1,477 +1,727 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title> Herdro Company </title>
-		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-		 <script src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-		</script>
-		<script src="https://kit.fontawesome.com/c52819d552.js" crossorigin="anonymous"></script>
-		<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-		</script>
-   		<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
-		<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,200,700,800,900' rel='stylesheet' type='text/css'>
-		<script>
-			$(function() {
-				var pull 		= $('#pull');
-					menu 		= $('nav ul');
-					menuHeight	= menu.height();
-				$(pull).on('click', function(e) {
-					e.preventDefault();
-					menu.slideToggle();
-				});
-				$(window).resize(function(){
-	        		var w = $(window).width();
-	        		if(w > 320 && menu.is(':hidden')) {
-	        			menu.removeAttr('style');
-	        		}
-	    		});
-			});
-		</script>
-	</head>
-	<body>
-		<div id="home" class="header scroll">
-			<div class="container">
-				<div class="logo">
-					<a href="#"><img src="images/herdro.png" title="HERDRO" class="logoStyle"/></a>
-				</div>
-				 <nav class="top-nav">
-					<ul class="top-nav">
-						<li class="active"><a href="#home" class="scroll">Home</a></li>
-						<li class="page-scroll"><a href="#about" class="scroll">About</a></li>
-						<li class="page-scroll"><a href="#services" class="scroll">Services</a></li>
-						<li class="page-scroll"><a href="#port" class="scroll">Protfolio</a></li>
-						<li class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>
-					</ul>
-					<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
-				</nav>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-		<div class="slider">
-			<script src="js/responsiveslides.min.js"></script>
-			  <script>
-			    $(function () {
-			      $("#slider3").responsiveSlides({
-			        manualControls: '#slider3-pager',
-			      });
-			    });
-			  </script>
-			    <ul class="rslides" id="slider3">
-			      <li>
-			      	<img src="images/sliderThree.jpg" alt="">
-			      	<div class="slid-info">
-			      		<h1>Creative Solutions</h1>
-			      		<p>Good that Lesser . Starts heaven over set May Gathering , is all land Cant You're after light our darkness, thing isnet.</p>
-			      		<a class="slid-btn" href="#">Read More</a>
-			      	</div>
-			      </li>
+<html lang="en">
+<head>
+    <title>HERDRO WEBSITE</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c52819d552.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  static-top wow fadeInLeft animated animated" id="home" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+                <img src="images/HerdroLogo.png" alt="HERDRO">
+              </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#home">Home
+                      <span class="sr-only">(current)</span>
+                    </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#clients">Clients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#company">Company</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
 
-			      <li><img src="images/sliderOne.jpg" alt="">
-			      	<div class="slid-info">
-			      		<h1>Creative Solutions</h1>
-			      		<p>Good that Lesser . Starts heaven over set May Gathering , is all land Cant You're after light our darkness, thing isnet.</p>
-			      		<a class="slid-btn" href="#">Read More</a>
-			      	</div>
-			      </li>
-			    </ul>
-			    <!-- Slideshow -->
-			    <ul id="slider3-pager">
-			      <li><a href="#"><span> </span></a></li>
-			      <li><a href="#"><span> </span></a></li>
-			      <li><a href="#"><span> </span></a></li>
-			    </ul>
-		   </div>
-		<!-----//End-slider---->
-		<!----start-about----->
-		<div id="about" class="about">
-			<div class="container">
-				<h2>About</h2>
-				<p class="wellcome-note-head"><label>We are a full Services Digital Agency. </label>We Design and develop <span>Websites,</span><span>Applications,</span><span>Mobile Solutions,</span> and more</p>
-				<p class="wellcome-note-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus velit quis risus eleifend bibendum. Aenean dictum felis in eros ultrices eleifend. Phasellus ultrices congue feugiat. Vestibulum sed pretium sem, sed venenatis nibh. Phasellus nec tincidunt neque. Proin accumsan sagittis lacus ut lobortis.Proin molestie cursus tortor in eleifend. Suspendisse potenti.</p>
-			<!----start-about-grids----->
-			<div class="about-grids">
-				<div class="col-md-3 about-grid">
-					<span class="about-icon"><i class="far fa-lightbulb"></i></span>
-					<h3><a href="#"><label>Reflexion</label> idea</a></h3>
-					<p>velit est, tempus in nulla sed, convallis porttitor lacus. Curabitur sed egestas eros. Donec convallis ligula eu diam elementum, quis tempor sem tincidunt.</p>
-				</div>
-				<div class="col-md-3 about-grid">
-					<span class="about-icon1"><i class="fas fa-glasses"></i></span>
-					<h3><a href="#"><label>Conception</label> Design</a></h3>
-					<p>velit est, tempus in nulla sed, convallis porttitor lacus. Curabitur sed egestas eros. Donec convallis ligula eu diam elementum, quis tempor sem tincidunt.</p>
-				</div>
-				<div class="col-md-3 about-grid">
-					<span class="about-icon2"><i class="fas fa-code"></i></span>
-					<h3><a href="#"><label>Codage</label> Develop</a></h3>
-					<p>velit est, tempus in nulla sed, convallis porttitor lacus. Curabitur sed egestas eros. Donec convallis ligula eu diam elementum, quis tempor sem tincidunt.</p>
-				</div>
-				<div class="col-md-3 about-grid">
-					<span class="about-icon3"><i class="fas fa-redo-alt"></i></span>
-					<h3><a href="#"><label>Efficacite</label> Rapidite</a></h3>
-					<p>velit est, tempus in nulla sed, convallis porttitor lacus. Curabitur sed egestas eros. Donec convallis ligula eu diam elementum, quis tempor sem tincidunt.</p>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			</div>
-			<!----//End-about-grids----->
-		</div>
-		<!----//End-about----->
-		<!----start-services---->
-		<div id="services" class="services">
-			<div class="container">
-				<h3>Services<label> </label></h3>
-			<!----start-servicves-list---->
-			<div class="services-list text-center">
-				<ul class="list-unstyled list-inline">
-					<li>
-						<a href="#"><span class="service-icon"> </span><label>Mobile</label></a>
-					</li>
-					<li>
-						<a href="#"><span class="service-icon1"> </span><label>Design</label></a>
-					</li>
-					<li>
-						<a href="#"><span class="service-icon2"> </span><label>Social</label></a>
-					</li>
-					<li>
-						<a href="#"><span class="service-icon3"> </span><label>E-commerce</label></a>
-					</li>
-					<li>
-						<a href="#"><span class="service-icon4"> </span><label>Database</label></a>
-					</li>
-					<li>
-						<a href="#"><span class="service-icon5"> </span><label>Communications</label></a>
-					</li>
-					<li>
-						<a href="#"><span class="service-icon6"> </span><label>Technology</label></a>
-					</li>
-				</ul>
-			</div>
-			<!----//End-servicves-list---->
-			</div>
-		</div>
-		<!----//End-services---->
-		<!----start-portfolio----->
-		<div id="port" class="portfolio portfolio-box">
-			<div class="container">
-				<h3>Portfolio<label> </label></h3>
-			<!----start-portfolio---->
-         <div id="port" class="container portfolio-main">
-	        	<!---- start-portfolio-script----->
-					<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-					<script type="text/javascript">
-						$(function () {
-							var filterList = {
-								init: function () {
+    <section class="Herdroethos scroll-animations">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-12 col-sm-6 animated">
+                    <div class="content">
+                        <h4 class="headings">The right software can change everything</h4>
+                        <p class="mb-5">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, tempora non earum cupiditate velit veritatis, nesciunt corrupti aspernatur maiores dolor minima mollitia aperiam fuga suscipit. Numquam quia fugit blanditiis rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure esse ipsa fugiat non fuga cumque blanditiis. Excepturi quidem necessitatibus perferendis officiis cum, doloremque in tempora laudantium! Sed, delectus accusantium.
+                        </p>
+                        <a href="" class="contactBtn">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-12 col-sm-6 animated">
+                    <div class="img-wrap">
+                        <img src="images/building.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-									// MixItUp plugin
-									// http://mixitup.io
-									$('#portfoliolist').mixitup({
-										targetSelector: '.portfolio',
-										filterSelector: '.filter',
-										effects: ['fade'],
-										easing: 'snap',
-										// call the hover effect
-										onMixEnd: filterList.hoverEffect()
-									});
+    <section class="services forWeb scroll-animations" id="services">
+        <div class="container">
+            <h4 class="headings text-center">What our services can do for you</h4>
+            <div class="row mb-4">
+                <div class="col animated">
+                    <div class="card mobileStyle" style="width: 20rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Software Consulting</h5>
+                          <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dignissimos fuga delectus distinctio, harum dolorum tempora voluptatum non quae sed unde ipsa veritatis cumque rem perferendis laboriosam ratione architecto quod. Lorem ipsum dolor
+                        </div>
+                      </div>
+                </div>
+                <div class="col animated">
+                    <div class="card mobileStyle" style="width: 20rem;">
+                      <div class="card-body">
+                        <h5 class="card-title">Custome Software Development</h5>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dignissimos fuga delectus distinctio, harum dolorum tempora voluptatum non quae sed unde ipsa veritatis cumque rem perferendis laboriosam ratione architecto quod. Lorem ipsum dolor
+                      </div>
+                    </div>
+                </div>
+                <div class="col animated">
+                  <div class="card" style="width: 20rem;">
+                      <div class="card-body">
+                        <h5 class="card-title">Software Product Development</h5>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dignissimos fuga delectus distinctio, harum dolorum tempora voluptatum non quae sed unde ipsa veritatis cumque rem perferendis laboriosam ratione architecto quod. Lorem ipsum dolor
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col">
+                <div class="card mobileStyle" style="width: 20rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Cyber Security Services</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dignissimos fuga delectus distinctio, harum dolorum tempora voluptatum non quae sed unde ipsa veritatis cumque rem perferendis laboriosam ratione architecto quod. Lorem ipsum dolor
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mobileStyle" style="width: 20rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Testing & QA</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dignissimos fuga delectus distinctio, harum dolorum tempora voluptatum non quae sed unde ipsa veritatis cumque rem perferendis laboriosam ratione architecto quod. Lorem ipsum dolor
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 20rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Data Analysis</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dignissimos fuga delectus distinctio, harum dolorum tempora voluptatum non quae sed unde ipsa veritatis cumque rem perferendis laboriosam ratione architecto quod. Lorem ipsum dolor
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
 
-								},
-								hoverEffect: function () {
-									// Simple parallax effect
-									$('#portfoliolist .portfolio').hover(
-										function () {
-											$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
-											$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
-										},
-										function () {
-											$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
-											$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
-										}
-									);
+    <div class="services forTabs animated">
+      <div class="container">
+        <h4 class="headings text-center">What our services can do for you</h4>
+        <div class="row mb-4">
+          <div class="col">
+            <div class="card mobileStyle" style="width: 20rem;">
+              <div class="card-body">
+                <h5 class="card-title">Software Consulting</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dignissimos fuga delectus distinctio, harum dolorum tempora voluptatum non quae sed unde ipsa veritatis cumque rem perferendis laboriosam ratione architecto quod. Lorem ipsum dolor
+              </div>
+            </div>
+          </div>
+          <div class="col">
+              <div class="card mobileStyle" style="width: 20rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Custome Software Development</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dignissimos fuga delectus distinctio, harum dolorum tempora voluptatum non quae sed unde ipsa veritatis cumque rem perferendis laboriosam ratione architecto quod. Lorem ipsum dolor
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col">
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Software Product Development</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dignissimos fuga delectus distinctio, harum dolorum tempora voluptatum non quae sed unde ipsa veritatis cumque rem perferendis laboriosam ratione architecto quod. Lorem ipsum dolor
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card mobileStyle" style="width: 20rem;">
+              <div class="card-body">
+                <h5 class="card-title">Cyber Security Services</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dignissimos fuga delectus distinctio, harum dolorum tempora voluptatum non quae sed unde ipsa veritatis cumque rem perferendis laboriosam ratione architecto quod. Lorem ipsum dolor
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card mobileStyle" style="width: 20rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Testing & QA</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dignissimos fuga delectus distinctio, harum dolorum tempora voluptatum non quae sed unde ipsa veritatis cumque rem perferendis laboriosam ratione architecto quod. Lorem ipsum dolor
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 20rem;">
+              <div class="card-body">
+                <h5 class="card-title">Data Analysis</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dignissimos fuga delectus distinctio, harum dolorum tempora voluptatum non quae sed unde ipsa veritatis cumque rem perferendis laboriosam ratione architecto quod. Lorem ipsum dolor
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-								}
+    <section class="HerdoNiche animated" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="colleagueWrap">
+              <img src="images/colleagues.jpg" alt="">
+            </div>
+          </div>
+          <div class="col">
+            <div class="whatWeDo">
+              <h4 class="headings">Every aspect of your IT Solution Ecosystem Taken Care of</h4>
+              <div>
+                Benefits
+                <ul class="benefits">
+                  <li class="benefitList">
+                    <div class='container2'>
+                      <i class="fas fa-check iconDetails"></i>
+                      <div class="text">
+                          <p>
+                              Consulting
+                          </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="benefitList">
+                    <div class='container2'>
+                      <i class="fas fa-check iconDetails"></i>
+                      <div class="text">
+                          <p>
+                            Implementation
+                          </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="benefitList">
+                    <div class='container2'>
+                      <i class="fas fa-check iconDetails"></i>
+                      <div class="text">
+                          <p>
+                            Security
+                          </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="benefitList">
+                    <div class='container2'>
+                      <i class="fas fa-check iconDetails"></i>
+                      <div class="text">
+                          <p>
+                            Migration
+                          </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="benefitList">
+                    <div class='container2'>
+                      <i class="fas fa-check iconDetails"></i>
+                      <div class="text">
+                          <p>
+                            Management and Support
+                          </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-							};
-							// Run the show!
-							filterList.init();
-						});
-					</script>
-					<!----//End-portfolio-script----->
-					<ul id="filters" class="clearfix">
-						<li><span class="filter active" data-filter="app card icon logo web">All</span> /</li>
-						<li><span class="filter" data-filter="app">WEB DESIGN</span> /</li>
-						<li><span class="filter" data-filter="card">WEB APP</span> /</li>
-						<li><span class="filter" data-filter="icon">MOBILE</span> /</li>
-						<li><span class="filter" data-filter="app"></span></li>
-					</ul>
-					<div id="portfoliolist">
-					<div class="portfolio logo1 mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img class="p-img" src="images/p1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
-		                <div class="port-info">
-		                	<h4><a href="#"> Flat Pixel</a></h4>
-		                	<span>Website</span>
-		                </div>
-					</div>
-					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img class="p-img" src="images/p2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
-		                 <div class="port-info">
-		                	<h4><a href="#">radoslav holan</a></h4>
-		                	<span>Website</span>
-		                </div>
-					</div>
-					<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img class="p-img" src="images/p3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
-		                <div class="port-info">
-		                	<h4><a href="#">Apemanboards</a></h4>
-		                	<span>Website</span>
-		                </div>
-					</div>
-					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img class="p-img" src="images/p4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
-		                 <div class="port-info">
-		                	<h4><a href="#"> Flat Pixel</a></h4>
-		                	<span>Website</span>
-		                </div>
-					</div>
-					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img class="p-img" src="images/p5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
-		                 <div class="port-info">
-		                	<h4><a href="#"> radoslav holan</a></h4>
-		                	<span>Website</span>
-		                </div>
-					</div>
-					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img class="p-img" src="images/p6.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
-		                 <div class="port-info">
-		                	<h4><a href="#">Apemanboards</a></h4>
-		                	<span>Website</span>
-		                </div>
-					</div>
-					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img class="p-img" src="images/p7.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
-		                 <div class="port-info">
-		                	<h4><a href="#"> Flat Pixel</a></h4>
-		                	<span>Website</span>
-		                </div>
-					</div>
-					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img class="p-img" src="images/p8.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
-		                 <div class="port-info">
-		                	<h4><a href="#">radoslav holan</a></h4>
-		                	<span>Website</span>
-		                </div>
-					</div>
-					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img class="p-img" src="images/p2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
-		                 <div class="port-info">
-		                	<h4><a href="#"> Apemanboards</a></h4>
-		                	<span>Website</span>
-		                </div>
-					</div>
-					<div class="clearfix"> </div>
-					<a class="more-ports text-center" href="#"><span> </span></a>
-				</div>
-		</div>
-		</div>
-		<div class="clearfix"> </div>
-		</div>
-         <!----//End-portfolio---->
-         <!-----start-testmonials---->
-         <div class="testmonials">
-         	<div class="container">
-	         	<div class="client-pic col-md-4">
-	         		<img src="images/client.jpg" title="name" />
-	         	</div>
-	         	<div class="client-sys col-md-8">
-	         		<!----start-testmonial-slider---->
-	         		<link rel="stylesheet" href="css/testmonial.css">
-  					<script src="js/prefixfree.min.js"></script>
-	         		<!----//End-testmonial-slider---->
-	         		<div class="gallery autoplay items-3">
-					    <div id="item-1" class="control-operator"></div>
-					    <div id="item-2" class="control-operator"></div>
-					    <div id="item-3" class="control-operator"></div>
-					    <figure class="item">
-					      <h3>WHAT CLIENTS SAY :</h3>
-					      <p class="client-says"><span class="left-quit"> &#8220;</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum feugiat justo, quis ultrices orci. Fusce semper turpis blandit, feugiat diam vitae, lobortis sapien. In nec quam purus. Curabitur malesuada, nisi eu facilisis fringilla, lorem quam fermentum arcu, eu vestibulum orci ligula non erat. Quisque mi justo, ornare quis nunc vitae, semper consectetur augue. Integer mollis ipsum a dui tincidunt varius. Proin laoreet mattis magna <span class="right-quit"> &#8221;</span></p>
-					    </figure>
-					    <figure class="item">
-					      <h3>WHAT CLIENTS SAY :</h3>
-					     <p class="client-says"><span class="left-quit"> &#8220;</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum feugiat justo, quis ultrices orci. Fusce semper turpis blandit, feugiat diam vitae, lobortis sapien. In nec quam purus. Curabitur malesuada, nisi eu facilisis fringilla, lorem quam fermentum arcu, eu vestibulum orci ligula non erat. Quisque mi justo, ornare quis nunc vitae, semper consectetur augue. Integer mollis ipsum a dui tincidunt varius. Proin laoreet mattis magna <span class="right-quit"> &#8221;</span></p>
-					    </figure>
-					    <figure class="item">
-					      <h3>WHAT CLIENTS SAY :</h3>
-					      <p class="client-says"><span class="left-quit"> &#8220;</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum feugiat justo, quis ultrices orci. Fusce semper turpis blandit, feugiat diam vitae, lobortis sapien. In nec quam purus. Curabitur malesuada, nisi eu facilisis fringilla, lorem quam fermentum arcu, eu vestibulum orci ligula non erat. Quisque mi justo, ornare quis nunc vitae, semper consectetur augue. Integer mollis ipsum a dui tincidunt varius. Proin laoreet mattis magna <span class="right-quit"> &#8221;</span></p>
-					    </figure>
-					    <div class="clearfix"> </div>
-					    <div class="controls">
-					      <a href="#item-1" class="control-button"><span> </span></a>
-					      <a href="#item-2" class="control-button"><span> </span></a>
-					      <a href="#item-3" class="control-button"><span> </span></a>
-					    </div>
-					    <div class="clearfix"> </div>
-				  </div>
-	         	</div>
-	         	<div class="clearfix"> </div>
-         	 </div>
-         </div>
+    <section class="aboutHerdro animated" id="company">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h4 class="headings">About Us</h4>
+            <p class="about-Herdro">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aliquam in provident ea quae qui repudiandae accusamus, molestias culpa sint modi sed, iste facilis id totam saepe dolorem assumenda porro? Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse deleniti quasi ratione veritatis illo recusandae sed reiciendis, laboriosam nam quas dicta? Delectus rem nemo, pariatur dolorum ullam cum voluptate ipsam?
+            </p>
+          </div>
+          <div class="col">
+            <div class="aboutImg">
+              <img src="images/sideimg.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
-		<div class="brand-carsuals">
-			<h4 class="headings">OUR CLIENTS</h4>
-			<ul id="flexiselDemo3">
-			    <li><img src="images/b-logo.png" /></li>
-			    <li><img src="images/b-logo.png" /></li>
-			    <li><img src="images/b-logo.png" /></li>
-			    <li><img src="images/b-logo.png" /></li>
-			</ul>
-			<script type="text/javascript">
-				$(window).load(function() {
-				    $("#flexiselDemo3").flexisel({
-				        visibleItems: 5,
-				        animationSpeed: 1000,
-				        autoPlay: true,
-				        autoPlaySpeed: 3000,
-				        pauseOnHover: true,
-				        enableResponsiveBreakpoints: true,
-				        responsiveBreakpoints: {
-				            portrait: {
-				                changePoint:480,
-				                visibleItems: 1
-				            },
-				            landscape: {
-				                changePoint:640,
-				                visibleItems: 2
-				            },
-				            tablet: {
-				                changePoint:768,
-				                visibleItems: 3
-				            }
-				        }
-				    });
+    <section class="HerdroServices animated">
+      <div class="container">
+        <h4 class="headings">Services we deliver</h4>
+        <div class="row mb-4">
+          <div class="col">
+            <div class="servicewrap">
+              Mobile Apps
+            </div>
+          </div>
+          <div class="col">
+            <div class="servicewrap mobileStyle">
+              Website Design
+            </div>
+          </div>
+          <div class="col">
+            <div class="servicewrap">
+              Web Portal
+            </div>
+          </div>
+          <div class="col">
+            <div class="servicewrap">
+              Data Analysis
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col">
+            <div class="servicewrap">
+              Mobile Apps
+            </div>
+          </div>
+          <div class="col">
+            <div class="servicewrap mobileStyle">
+              Website Design
+            </div>
+          </div>
+          <div class="col">
+            <div class="servicewrap">
+              Web Portal
+            </div>
+          </div>
+          <div class="col">
+            <div class="servicewrap">
+              Data Analysis
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				});
-			</script>
-		</div>
-		<!-----//End-brand-carsuals------>
+    <section class="HerdoClients animated" id="clients">
+      <div class="container">
+        <h4 class="headings">Our Clients</h4>
+        <div class="row mb-4">
+          <div class="col">
+            <div class="clientwrap mb-3">
+              Logo
+            </div>
+            <p class="text-center font-weight-bold">Lagos State University</p>
+          </div>
+          <div class="col">
+            <div class="clientwrap mb-3">
+              Logo
+            </div>
+            <p class="text-center font-weight-bold">Strickall</p>
+          </div>
+          <div class="col">
+            <div class="clientwrap mb-3">
+              Logo
+            </div>
+            <p class="text-center font-weight-bold">Daemon Energy</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="clientwrap mb-3">
+              Logo
+            </div>
+            <p class="text-center font-weight-bold">Nexgas Gas</p>
+          </div>
 
-		<!----start-contact---->
-		<div id="contact" class="contact">
-			<div class="container">
-				 <h3>Contact<label> </label></h3>
-				<div class="contact-grids">
-					<div class="col-md-6 contact-grid-left">
-						<form method="post" action="contact-post.html">
-							<input type="text" value="Name " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
-							<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-							<input type="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
-							<textarea onfocus="if(this.value == 'Your Message here....') this.value='';" onblur="if(this.value == '') this.value='Your Message here....;">Your Message here....</textarea>
-							<p class="conditions"> <span></span></p>
-							<span class="submit-btn"><input type="submit" value="Send"></span>
-						</form>
-					</div>
-					<!----->
-					<div class="col-md-6 contact-grid-right">
-						<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Addo%20Road,%20Ajah,%20Lagos&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://embedgooglemap.net/maps/91"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet turpis a nibh feugiat, nec viverra arcu lacinia.</p>
-						<div class="col-md-4">
-							<h5>Phone</h5>
-							<span>[81]123456789</span>
-						</div>
-						<div class="col-md-4">
-							<h5>Address</h5>
-							<span>2014 Street,</span>
-							<span>San francisco California,</span>
-							<span>United States,</span>
-						</div>
-						<div class="col-md-4">
-							<h5>Email</h5>
-							<span><a href="#">info@Herdrocomapny.com</a></span>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<!-----start-contact-social---->
-				<ul class="list-unstyled list-inline contact-social">
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-				</ul>
-				<!-----//End-contact-social---->
-		</div>
-		</div>
-		<!----//End-contact---->
-		<!----start-copy-right--->
-		<div class="copy-right">
-			<div class="container">
-				<p>Website by <a href="#">Herdro Company</a></p>
-					<script type="text/javascript">
-				$(document).ready(function() {
-					/*
-					var defaults = {
-			  			containerID: 'toTop', // fading element id
-						containerHoverID: 'toTopHover', // fading element hover id
-						scrollSpeed: 1200,
-						easingType: 'linear'
-			 		};
-					*/
+          <div class="col">
+            <div class="clientwrap mb-3">
+              Logo
+            </div>
+            <p class="text-center font-weight-bold">Akowe.App</p>
+          </div>
+          <div class="col">
+            <div class="clientwrap mb-3">
+              Logo
+            </div>
+            <p class="text-center font-weight-bold">Idimaris Loans</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="clientwrap mb-3">
+              Logo
+            </div>
+            <p class="text-center font-weight-bold">Silverwhite Studios</p>
+          </div>
+          <div class="col">
+            <div class="clientwrap mb-3">
+              Logo
+            </div>
+            <p class="text-center font-weight-bold">Xipware</p>
+          </div>
+          <div class="col">
+            <div class="clientwrap mb-3">
+              Logo
+            </div>
+            <p class="text-center font-weight-bold">Federal Polytechnic Nekede</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					$().UItoTop({ easingType: 'easeOutQuart' });
+    <section class="HerdroTestimonial animated">
+      <div class="container">
+        <h4 class="headings text-center">Testimonial</h4>
+        <div class="col-lg-10 offset-lg-1 pt-5 pb-5 text-light">
+          <div id="client-testimonial-carousel" class="carousel slide" data-ride="carousel" style="height:200px;">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active text-center p-4">
+                <div class="clientImgWrap float-right">
+                  <small>
+                    Micheal Dan CEO, Strickall
+                  </small>
+                  <img class="rounded-circle clientImg" alt="client" src="images/user.jpg" data-holder-rendered="true">
+                </div>
+                <div class="clearfix"></div>
+                <blockquote class="blockquote text-center">
+                  <p class="mb-0">
+                    <i class="fa fa-quote-left"></i>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus libero repudiandae fuga amet. Itaque quis veritatis dolorum corporis nam, sapiente deserunt ipsa tempore in? Eos expedita asperiores quaerat tempore minus?
+                    <i class="fa fa-quote-right"></i>
+                  </p>
+                </blockquote>
+              </div>
+              <div class="carousel-item text-center p-4">
+                <div class="clientImgWrap float-right">
+                  <small>
+                    Micheal Dan CEO, Strickall
+                  </small>
+                  <img class="rounded-circle clientImg" alt="client" src="images/user.jpg" data-holder-rendered="true">
+                </div>
+                <div class="clearfix"></div>
+                <blockquote class="blockquote text-center">
+                  <p class="mb-0">
+                    <i class="fa fa-quote-left"></i>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus libero repudiandae fuga amet. Itaque quis veritatis dolorum corporis nam, sapiente deserunt ipsa tempore in? Eos expedita asperiores quaerat tempore minus?
+                    <i class="fa fa-quote-right"></i>
+                  </p>
+                </blockquote>
+              </div>
+              <div class="carousel-item text-center p-4">
+                <div class="clientImgWrap float-right">
+                  <small>
+                    Micheal Dan CEO, Strickall
+                  </small>
+                  <img class="rounded-circle clientImg" alt="client" src="images/user.jpg" data-holder-rendered="true">
+                </div>
+                <div class="clearfix"></div>
+                <blockquote class="blockquote text-center">
+                  <p class="mb-0">
+                    <i class="fa fa-quote-left"></i>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus libero repudiandae fuga amet. Itaque quis veritatis dolorum corporis nam, sapiente deserunt ipsa tempore in? Eos expedita asperiores quaerat tempore minus?
+                    <i class="fa fa-quote-right"></i>
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+            <ol class="carousel-indicators">
+              <li data-target="#client-testimonial-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#client-testimonial-carousel" data-slide-to="1"></li>
+              <li data-target="#client-testimonial-carousel" data-slide-to="2"></li>
+            </ol>
+            <a class="carousel-control-prev" href="#client-testimonial-carousel" role="button" data-slide="prev">
+              <i class="fas fa-chevron-left controlIcon" aria-hidden="true"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#client-testimonial-carousel" role="button" data-slide="next">
 
-				});
-			</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-			</div>
-		</div>
-		<!----//End-copy-right--->
-		<!----//End-container------>
-	</body>
+              <i class="fas fa-chevron-right controlIcon" aria-hidden="true"></i>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="HerdroTeam animated" id="team">
+      <div class="container">
+        <h4 class="headings text-center">Our Team</h4>
+        <div class="row">
+          <div class="col">
+            <div class="teamImgWrap">
+              <img src="images/User.jpg" alt="" class="teamImg">
+              <p class="">
+                CEO
+              </p>
+              <p class="font-weight-bold">
+                John Snow
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="teamImgWrap">
+              <img src="images/User.jpg" alt="" class="teamImg">
+              <p class="title">
+                Executive Director
+              </p>
+              <p class="title font-weight-bold">
+                David Dan
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="teamImgWrap">
+              <img src="images/User.jpg" alt="" class="teamImg">
+              <p class="title">
+               Product Designer
+              </p>
+              <p class="title font-weight-bold">
+                Mary Tammy
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="teamImgWrap">
+              <img src="images/User.jpg" alt="" class="teamImg">
+              <p class="title">
+                Head, Human Resources
+              </p>
+              <p class="title font-weight-bold">
+                Victoria Tones
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contactHerdro animated" id="contact">
+      <div class="container">
+        <h4 class="headings text-center">Contact Us</h4>
+        <div class="row">
+          <div class="col">
+            <div class="form-wrap">
+              <span>Drop Us a line! We are here to answer your questions 24/7.</span>
+              <form>
+                <div class="form-row mb-4">
+                  <div class="col">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="col">
+                    <label for="company">Comapny</label>
+                    <input type="text" class="form-control" id="Company">
+                  </div>
+                </div>
+                <div class="form-row mb-4">
+                  <div class="col">
+                    <label for="phone">Phone</label>
+                    <input type="text" class="form-control" id="phone">
+                  </div>
+                  <div class="col">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Message</label>
+                  <textarea class="form-control" id="message" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary sendBtn mx-auto d-block">Send</button>
+              </form>
+            </div>
+          </div>
+          <div class="col">
+            <div class="contactInfo">
+              <ul class="infoList">
+                <li class="mb-4">
+                  <p class="font-weight-bold">
+                    Office Address
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quas voluptatibus libero vel dolorem unde, temporibus labore accusantium
+                  </p>
+                </li>
+                <li class="mb-4">
+                  <p class="font-weight-bold">
+                    General Enquiries
+                  </p>
+                  <span>
+                    info@herdro.com
+                  </span>
+                </li>
+                <li class="mb-4">
+                  <p class="font-weight-bold">
+                    Customer Service
+                  </p>
+                  <span class="d-block">
+                    customercare@herdro.com
+                  </span>
+                  <span>
+                    sales@herdro.com
+                  </span>
+                </li>
+                <li class="mb-4">
+                  <p class="font-weight-bold">
+                    Phone Number
+                  </p>
+                  <span>
+                    08088888888, 08077778888
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer animated">
+      <div class="container">
+        <div class="row row-wrapper">
+          <div class="col mt-2">
+            <div class="address">
+              <p class="font-weight-bold">
+                Headquaters
+              </p>
+              <p>
+                Nibh habitant nisl <br> at mauris <br> volupant non.
+              </p>
+            </div>
+          </div>
+          <div class="col mt-2">
+            <div>
+              <p class="font-weight-bold">
+                Services
+              </p>
+              <ul class="footerServices">
+                <li>Software Consulting</li>
+                <li>Software Production</li>
+                <li>Custome Software Development</li>
+                <li>Cyber Security Services</li>
+                <li>Testing & QA</li>
+                <li>Data Analysis</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col mt-2">
+            <div>
+              <p class="font-weight-bold">
+                Company
+              </p>
+              <ul class="footerNavigation">
+                <a href="#about">
+                  <li>
+                    About Us
+                  </li>
+                </a>
+                <a href="#clients">
+                  <li>
+                    Our Clients
+                  </li>
+                </a>
+                <a href="#policy">
+                  <li>
+                    Privacy Policy
+                  </li>
+                </a>
+                <a href="#team">
+                  <li>
+                    Staff
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div class="col mt-2">
+            <p class="font-weight-bold">
+              Contact Us
+            </p>
+            <ul class="footerContactInfo">
+              <li>
+                <div>
+                  <span><i class="fas fa-phone-alt"></i></span>
+                  <span>0808888888</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span><i class="fas fa-phone-alt"></i></span>
+                  <span>08077778888</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span><i class="far fa-envelope"></i></span>
+                  <span>sales@herdro.com</span>
+                </div>
+              </li>
+            </ul>
+            <ul class="HerdroSocials">
+              <li><i class="fab fa-instagram"></i></li>
+              <li><i class="fab fa-facebook-f"></i></li>
+              <li><i class="fab fa-twitter"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="Herdrowrap">
+          <p>&#169; Herdro.com</p>
+          <p>
+            A subsidiary of Sholistudios
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
 </html>
-

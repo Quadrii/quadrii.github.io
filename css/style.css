@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-link {
+  color: #000;
+}
+.row-wrapper {
+  border-top: 1px solid #000;
+  padding-bottom: 3px;
+}
+.address {
+  font-size: 13px;
+}
+.footer {
+  background-color: #f0f4fb;
+  padding: 30px 0;
+}
+.footer li {
+  list-style: none;
+}
+.footer a {
+  color: #000;
+}
+.footerContactInfo li, .footerNavigation li, .footerServices li {
+  list-style: none;
+  margin: 5px;
+  font-size: 13px;
+}
+.HerdroSocials {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+.HerdroSocials li {
+  display: inline-block;
+  margin: 5px;
+}
+.navbar {
+    background-color: #f0f4fb;
+    box-shadow: 0 10px 30px 0 rgb(33,33,33,0.15);
+}
+.navbar-brand img{
+    width: 100px;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+.Herdroethos {
+    background-color: #f0f4fb;
+    padding: 30px 0;
+}
+.headings {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.content p {
+    line-height: 30px;
+    font-size: 15px;
+}
+.img-wrap img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+.contactBtn {
+    background-color: #4e73df;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 2px;
+}
+.contactBtn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.HerdroTestimonial {
+    background-color: #f0f4fb;
+    padding: 30px 0;
+}
+.services, .HerdoNiche, .HerdroServices, .aboutHerdro, .HerdoClients, .HerdroTeam, .contactHerdro {
+    background: #f8f9fc;
+    padding: 30px 0;
+}
+.forTabs {
+  display: none;
+}
+.contactHerdro {
+  background: #fff;
+  padding: 30px 0;
+  box-shadow: 0 10px 30px 0 rgb(33,33,33,0.15);
+}
+.form-wrap {
+  border: 1px solid #4e73df;
+  padding: 30px 30px;
+  border-radius: 3px;
+}
+.sendBtn {
+  width: 150px;
+}
+.infoList li{
+  list-style: none;
+}
+.card {
+    border: none !important;
+    box-shadow: 0px 3px 9px rgba(113, 117, 123, 0.4);
+    cursor: pointer;
+}
+.card-title {
+    border-left: 5px solid #4e73df;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+}
+.card-text {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.colleagueWrap img {
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+}
+.benefits li {
+    list-style: none;
+    display: block;
+    clear: both;
+}
+.iconDetails {
+    margin:0 2%;
+    float:left;
+    padding: 3px;
+    color: #fff;
+    border-radius: 50%;
+    background: #4e73df;
+}
+.container2 {
+    width:100%;
+    height:auto;
+    padding:1%;
+}
+.text {
+    float:left;
+}
+.text p {
+    width:100%;
+    float:left;
+    font-size: 12px;
+}
+.about-Herdro {
+    line-height: 25px;
+    font-size: 15px;
+}
+.aboutImg img {
+    width: 400px;
+    height: 300px;
+}
+.servicewrap, .clientwrap {
+    background: #fff;
+    box-shadow: 0px 3px 9px rgba(113, 117, 123, 0.4);
+    text-align: center;
+    padding: 20px;
+}
+
+#client-testimonial-carousel {min-height: 200px;}
+
+.clientImg {
+  width: 100px;
+  height: 100px;
+}
+.controlIcon {
+  color: #000;
+}
+.clientImgWrap {
+  margin-top: -20px;
+}
+.clientImgWrap small {
+  color: #000;
+}
+blockquote {
+  color: #000;
+  font-size: 15px !important;
+}
+.carousel-indicators {
+  bottom: -20px !important;
+}
+.carousel-indicators li {
+  background: #000 !important;
+}
+
+.teamImg {
+  width: 200px;
+  height: 200ppx;
+  border-radius: 3px;
+}
+.title {
+  text-align: center;
+}

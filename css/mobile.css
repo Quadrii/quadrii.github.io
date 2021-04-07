@@ -1,0 +1,119 @@
+@media only screen and (max-width: 768px) {
+    .forTabs {
+        display: block;
+      }
+      .forWeb {
+        display: none;
+      }
+}
+
+@media only screen and (max-width: 425px) {
+    .content {
+        margin-bottom: 20px;
+    }
+    .colleagueWrap img {
+        width: 300px;
+        height: 250px;
+        margin-left: 40px;
+    }
+    .aboutImg img {
+        width: 300px;
+        margin-left: 30px;
+    }
+    .card {
+        width: 18rem !important;
+        margin-left: 40px;
+    }
+    .mobileStyle {
+        margin-bottom: 20px;
+    }
+    .teamImgWrap {
+        margin-left: 100px;
+    }
+    .title {
+        text-align: left;
+    }
+    .img-wrap {
+        margin-left: 40px;
+    }
+    .contactBtn {
+        margin-left: 40px;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+    .content {
+        margin-bottom: 20px;
+    }
+    .colleagueWrap img {
+        width: 300px;
+        height: 250px;
+    }
+    .aboutImg img {
+        width: 300px;
+
+    }
+    .card {
+        width: 18rem !important;
+        margin-left: 20px;
+    }
+    .mobileStyle {
+        margin-bottom: 20px;
+    }
+    .teamImgWrap {
+        margin-left: 50px;
+    }
+    .title {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .content {
+        margin-bottom: 20px;
+    }
+    .colleagueWrap img {
+        width: 300px;
+        height: 250px;
+    }
+    .aboutImg img {
+        width: 300px;
+    }
+    .card {
+        width: 18rem !important;
+        margin-left: 20px;
+    }
+    .mobileStyle {
+        margin-bottom: 20px;
+    }
+    .teamImgWrap {
+        margin-left: 50px;
+    }
+    .title {
+        text-align: left;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    .content {
+        margin-bottom: 20px;
+    }
+    .colleagueWrap img {
+        width: 300px;
+        height: 250px;
+    }
+    .aboutImg img {
+        width: 300px;
+    }
+    .card {
+        width: 18rem !important;
+    }
+    .mobileStyle {
+        margin-bottom: 20px;
+    }
+    .teamImgWrap {
+        margin-left: 50px;
+    }
+}
