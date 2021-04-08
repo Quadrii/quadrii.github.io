@@ -1,208 +1,215 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+ body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: all 200ms linear;
+ }
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body {
-    font-family: 'Poppins', sans-serif;
-}
-.teamCol {
-  text-align: center;
+.navbar {
+    z-index: 1000;
 }
 .nav-link {
-  color: #000;
+    color: #000 !important;
 }
-.row-wrapper {
-  border-top: 1px solid #000;
-  padding-bottom: 3px;
+.firstSection {
+    margin-top: -85px;
 }
-.address {
-  font-size: 13px;
+.imgContent {
+    position: absolute;
+    top: 30%;
+    left: 20%;
 }
-.footer {
-  background-color: #f0f4fb;
-  padding: 30px 0;
+.imgContent h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bolder;
 }
-.footer li {
-  list-style: none;
+.tasteBanner {
+    position: relative;
+    height: 500px;
 }
-.footer a {
-  color: #000;
+.food2PotDishes img {
+    width: 400px;
+    height: 400px;
 }
-.footerContactInfo li, .footerNavigation li, .footerServices li {
-  list-style: none;
-  margin: 5px;
-  font-size: 13px;
-}
-.HerdroSocials {
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  text-align: center;
-}
-.HerdroSocials li {
-  display: inline-block;
-  margin: 5px;
-}
-.navbar {
-    background-color: #f0f4fb;
-    box-shadow: 0 10px 30px 0 rgb(33,33,33,0.15);
-}
-.navbar-brand img{
-    width: 100px;
+.food2PotDishes {
+    margin-top: 85px;
+    margin-left: -200px;
 }
 
-.nav-item {
-    margin-left: 10px;
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
 }
 
-.Herdroethos {
-    background-color: #f0f4fb;
+.rotating {
+    -webkit-animation: rotating 20s linear infinite;
+}
+.Food2Pot-about, .Food2Pot-whatWeDo, .food2Pot-Customers, .food2potNiche, .food2pot-order, .food2pot-App {
     padding: 30px 0;
 }
 .headings {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.content p {
-    line-height: 30px;
-    font-size: 15px;
-}
-.img-wrap img {
-    width: 300px;
-    height: 300px;
-    border-radius: 5px;
-}
-.contactBtn {
-    background-color: #4e73df;
-    color: #fff;
-    padding: 12px 30px;
-    border-radius: 2px;
-}
-.contactBtn:hover {
-    color: #fff;
-    text-decoration: none;
-}
-.HerdroTestimonial {
-    background-color: #f0f4fb;
-    padding: 30px 0;
-}
-.services, .HerdoNiche, .HerdroServices, .aboutHerdro, .HerdoClients, .HerdroTeam, .contactHerdro {
-    background: #f8f9fc;
-    padding: 30px 0;
-}
-.forTabs {
-  display: none;
-}
-.contactHerdro {
-  background: #fff;
-  padding: 30px 0;
-  box-shadow: 0 10px 30px 0 rgb(33,33,33,0.15);
-}
-.form-wrap {
-  border: 1px solid #4e73df;
-  padding: 30px 30px;
-  border-radius: 3px;
-}
-.sendBtn {
-  width: 150px;
-}
-.infoList li{
-  list-style: none;
-}
-.card {
-    border: none !important;
-    box-shadow: 0px 3px 9px rgba(113, 117, 123, 0.4);
-    cursor: pointer;
-}
-.card-title {
-    border-left: 5px solid #4e73df;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 5px;
-}
-.card-text {
-    font-size: 15px;
-    line-height: 25px;
-}
-
-.colleagueWrap img {
-    width: 400px;
-    height: 300px;
-    border-radius: 5px;
-}
-.benefits li {
-    list-style: none;
-    display: block;
-    clear: both;
-}
-.iconDetails {
-    margin:0 2%;
-    float:left;
-    padding: 3px;
-    color: #fff;
-    border-radius: 50%;
-    background: #4e73df;
-}
-.container2 {
-    width:100%;
-    height:auto;
-    padding:1%;
-}
-.text {
-    float:left;
-}
-.text p {
-    width:100%;
-    float:left;
-    font-size: 12px;
-}
-.about-Herdro {
-    line-height: 25px;
-    font-size: 15px;
-}
-.aboutImg img {
-    width: 400px;
-    height: 300px;
-}
-.servicewrap, .clientwrap {
-    background: #fff;
-    box-shadow: 0px 3px 9px rgba(113, 117, 123, 0.4);
     text-align: center;
-    padding: 20px;
+    font-weight: bolder;
+    font-size: 40px;
 }
-
-#client-testimonial-carousel {min-height: 200px;}
-
-.clientImg {
-  width: 100px;
-  height: 100px;
-}
-.controlIcon {
-  color: #000;
-}
-.clientImgWrap {
-  margin-top: -20px;
-}
-.clientImgWrap small {
-  color: #000;
-}
-blockquote {
-  color: #000;
-  font-size: 15px !important;
-}
-.carousel-indicators {
-  bottom: -20px !important;
-}
-.carousel-indicators li {
-  background: #000 !important;
-}
-
-.teamImg {
-  width: 200px;
-  height: 200ppx;
-  border-radius: 3px;
+.abtHeading {
+    color: #000 !important;
+    font-weight: bold;
+    text-align: center;
 }
 .title {
-  text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.about-wrap p {
+    line-height: 25px;
+}
+.sideImg {
+    width: 300px;
+    height: 280px;
+    transition: transform .2s;
+}
+.sideImg:hover {
+    transform: scale(1.1);
+}
+.discoverWrap {
+    max-width: 100%;
+}
+.discoverWrap img {
+    object-fit: cover;
+}
+.Niche li{
+    display: inline-block;
+}
+.listOne, .listTwo {
+    width: 50%;
+}
+.leftCol {
+    background: url(../images/food2potFood.png) no-repeat 0px 0px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    background-position: center;
+    height: 500px;
+}
+.rightCol {
+    background-color: #000;
+    height: 250px;
+    padding: 50px 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.downrow {
+    background: #FECD2B;
+    height: 250px;
+    border-top-left-radius: 50px 20px;
+    padding: 50px 20px;
+}
+.downrow p {
+    text-align: center;
+    line-height: 30px;
+}
+
+.MenuRow {
+    background: url(../images/food2potBackground.png) no-repeat 0px 0px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    background-position: center;
+    height: 500px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+.Appwrapper {
+    background: url(../images/DiscoverFood2Pot.png) no-repeat 0px 0px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    background-position: cover;
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 30px;
+}
+.order {
+    color: #fff;
+}
+.Headings {
+    font-weight: bolder;
+    color: #fff;
+    text-align: left;
+}
+.titled {
+    color: #fff;
+}
+
+.dishList li {
+    display: inline-block;
+    list-style:none;
+    margin: 5px;
+}
+.secondListImg {
+    padding-top: 30px;
+}
+.comingSoonBtn {
+    background: #FECD2B;
+    color: #000;
+    border-radius: 20px;
+    width: 120px;
+    font-size: 14px;
+    height: 30px;
+    border: none;
+}
+.apps {
+    font-size: 40px;
+    color: #fff;
+}
+.ourApp li {
+    list-style: none;
+    margin: 5px;
+    display: inline-block;
+}
+.appStore {
+    width: 150px;
+}
+.appImgWrap {
+    text-align: center;
+    margin-top: -86px;
+}
+.appImg {
+    width: 389px;
+    object-fit: cover;
+    text-align: center;
+}
+.footer {
+     background-color: #000;
+     padding: 20px 0;
+}
+.footer {
+    color: #fff;
+}
+.footerLogo {
+    width: 200px;
 }
