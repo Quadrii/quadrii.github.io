@@ -1,0 +1,87 @@
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--font);background:var(--ink);color:var(--white)}
+
+  /* ---------- Slider shell ---------- */
+  .hero{position:relative;overflow:hidden;background:var(--ink);
+        height:clamp(560px,82vh,780px);}
+  .slide{position:absolute;inset:0;opacity:0;visibility:hidden;
+         transition:opacity 1s ease,visibility 1s;}
+  .slide.is-active{opacity:1;visibility:visible;z-index:1}
+
+  .slide__bg{position:absolute;inset:0;background-size:cover;background-position:center;
+             transform:scale(1.08);transition:transform 7s ease-out;}
+  .slide.is-active .slide__bg{transform:scale(1)}
+  /* dark gradient so text stays readable on any image */
+  .slide::after{content:"";position:absolute;inset:0;
+    background:
+      linear-gradient(90deg,rgba(7,18,13,.92) 0%,rgba(7,18,13,.55) 45%,rgba(7,18,13,.15) 70%,rgba(7,18,13,.65) 100%);}
+
+  /* ---------- Content ---------- */
+  .slide__inner{position:relative;z-index:2;height:100%;max-width:1280px;margin:0 auto;
+    padding:0 clamp(20px,5vw,64px);
+    display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);
+    align-items:center;gap:32px;}
+
+  .eyebrow{color:var(--lime);font-size:clamp(.68rem,1.1vw,.8rem);font-weight:600;
+           letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
+  h1{
+    /* font-size:clamp(2.6rem,7vw,5.6rem); */
+    font-size: 75px;
+    line-height:1;
+    font-weight:600;
+    letter-spacing:-.02em
+  }
+  h1 span{color:var(--lime);display:block}
+  .lead{margin-top:22px;max-width:520px;font-size:clamp(.92rem,1.4vw,1.05rem);line-height:1.6;
+        color:rgba(255,255,255,.9)}
+
+  .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:8px;
+       font:600 .92rem var(--font);text-decoration:none;cursor:pointer;
+       transition:transform .2s,background .2s,border-color .2s,color .2s;}
+  .btn--primary{background:var(--lime);color:var(--ink);border:1.5px solid var(--lime)}
+  .btn--primary:hover{background:var(--lime-dark);border-color:var(--lime-dark);transform:translateY(-2px)}
+  .btn--ghost{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.55)}
+  .btn--ghost:hover{border-color:var(--lime);color:var(--lime);transform:translateY(-2px)}
+  .btn:focus-visible,.arrow:focus-visible,.dot:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+
+  .side{justify-self:end;max-width:320px;padding-left:22px;border-left:3px solid var(--lime)}
+  .side p{font-size:clamp(1.15rem,2.2vw,1.6rem);font-weight:500;line-height:1.35}
+
+  /* ---------- Text animation (restarts on every slide) ---------- */
+  .anim{opacity:0}
+  .slide.is-active .from-left{animation:inLeft .9s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:var(--d,0s)}
+  .slide.is-active .from-right{animation:inRight .9s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:var(--d,0s)}
+  @keyframes inLeft {from{opacity:0;transform:translateX(-60px)}to{opacity:1;transform:none}}
+  @keyframes inRight{from{opacity:0;transform:translateX(60px)} to{opacity:1;transform:none}}
+
+  /* ---------- Controls ---------- */
+  .arrow{position:absolute;top:50%;z-index:5;transform:translateY(-50%);width:46px;height:46px;
+         border-radius:50%;border:1.5px solid rgba(255,255,255,.4);background:rgba(7,18,13,.45);
+         color:#fff;cursor:pointer;display:grid;place-items:center;backdrop-filter:blur(4px);
+         transition:background .2s,border-color .2s}
+  .arrow:hover{background:var(--lime);border-color:var(--lime);color:var(--ink)}
+  .arrow--prev{left:clamp(8px,2vw,24px)} .arrow--next{right:clamp(8px,2vw,24px)}
+  .dots{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);z-index:5;display:flex;gap:10px}
+  .dot{width:10px;height:10px;border-radius:99px;border:0;background:rgba(255,255,255,.45);
+       cursor:pointer;transition:width .3s,background .3s}
+  .dot.is-active{width:32px;background:var(--lime)}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:900px){
+    .slide::after{background:linear-gradient(180deg,rgba(7,18,13,.55) 0%,rgba(7,18,13,.9) 100%)}
+    .slide__inner{grid-template-columns:1fr;align-content:center;gap:24px;padding-bottom:56px}
+    .side{justify-self:start;max-width:none}
+    .arrow{display:none}   /* swipe on touch devices instead */
+  }
+  @media (max-width:480px){
+    .hero{height:auto;min-height:100svh}
+    .slide{min-height:100svh}
+    .btn{width:100%;justify-content:center}
+    .actions{flex-direction:column}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .slide,.slide__bg{transition:none}
+    .anim{opacity:1!important;animation:none!important}
+  }

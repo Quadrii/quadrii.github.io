@@ -1,564 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>Quadri Adisa</title>
-    <meta content="Quadri Adisa creative frontend developer software engineer frontend engineer web developer website designer" name="description">
-    <meta content="Quadri Adisa creative frontend developer software engineer frontend engineer web developer website designer" name="keywords">
-    <meta name="description" content="Quadri Adisa Website developer with proven experience in helping companies create and maintain a better reusable codebase"> 
-    <!-- Favicons -->
-    <!-- <link href="assets/img/favicon.png" rel="icon"> -->
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> 
-
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-  </head>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/slider.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c52819d552.js" crossorigin="anonymous"></script>
+    <title>PLES IT SERVICES</title> 
+</head>
 <body>
+    <header class="site-header" id="siteHeader">
+      <div class="site-header__bar">
+        <a href="/" class="logo" aria-label="PLES IT Services home">
+          <img src="Assets/images/ples-logo.png" alt="Ples - Powering the world of IT">
+        </a>
+        <nav class="nav" id="primaryNav" aria-label="Primary">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="index.html" aria-current="page">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="about.html">About Us</a></li>
+            <li class="nav__item">
+              <button class="nav__link" aria-expanded="false" aria-haspopup="true">Services
+                <svg class="caret" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 3l4 4 4-4"/></svg></button>
+              <ul class="submenu">
+                <li><a href="">IT Reselling &amp; Procurement</a></li>
+                <li><a href="">IOR</a></li>
+                <li><a href="">Warehousing</a></li>
+                <li><a href="">Infrastructure Services</a></li>
+                <li><a href="">Motorola Solutions</a></li>
+                <li><a href="">TPM &amp; Field Engineering</a></li>
+              </ul>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="">Projects</a></li>
+            <li class="nav__item"><a class="nav__link" href="industries.html">Industries</a></li>
+            <li class="nav__item"><a class="nav__link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
 
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-      
-      <a href="index.html" class="a-logo">
-        <img src="./assets/img/Q.jpg" alt="" style="width: 100px;object-fit: cover;">
-      </a>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <div class="tools">
+          <a href="contact.html" class="hbtn hbtn--solid" title="Talk to an Engineer"><svg class="hbtn__icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15v-3a8 8 0 0116 0v3"/><rect x="2" y="13" width="5" height="7" rx="2" fill="currentColor"/><rect x="17" y="13" width="5" height="7" rx="2" fill="currentColor"/><path d="M19.5 20c0 1.7-1.8 2.5-4.5 2.5"/><circle cx="13.5" cy="22.5" r="1" fill="currentColor" stroke="none"/></svg><span class="hbtn__txt">Talk to an Engineer</span></a>
+          <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav"><span></span></button>
+        </div>
+      </div>
+    </header>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#work">Work</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+    <section class="hero" id="heroSlider" aria-roledescription="carousel" aria-label="Featured">
+      <article class="slide is-active" aria-roledescription="slide" aria-label="1 of 3">
+        <div class="slide__bg" style="background-image:url('Assets/images/hero-data-center.png')"></div>
+        <div class="slide__inner">
+          <div class="left">
+            <p class="eyebrow anim from-left" style="--d:.1s">Technology. Infrastructure. Connectivity.</p>
+            <h1 class="anim from-left" style="--d:.25s">Built for <span>Africa.</span></h1>
+            <p class="lead anim from-left" style="--d:.4s">PLES IT SERVICES delivers enterprise technology through IT reselling, procurement, infrastructure deployment, maintenance, field engineering, logistics and professional communications solutions across Africa.</p>
+            <div class="actions anim from-left" style="--d:.55s">
+              <a href="#solutions" class="btn btn--primary">Explore Our Solutions <span aria-hidden="true">&rarr;</span></a>
+              <a href="#contact" class="btn btn--ghost">Talk to an Engineer</a>
+            </div>
+          </div>
+          <div class="side anim from-right" style="--d:.5s">
+            <p>Reliable technology. Expert support. Nationwide and across Africa.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="slide" aria-roledescription="slide" aria-label="2 of 3">
+        <div class="slide__bg" style="background-image:url('Assets/images/hero-data-center.png')"></div>
+        <div class="slide__inner">
+          <div class="left">
+            <p class="eyebrow anim from-left" style="--d:.1s">Infrastructure Services</p>
+            <h1 class="anim from-left" style="--d:.25s">Design. Deploy. <span>Maintain.</span></h1>
+            <p class="lead anim from-left" style="--d:.4s">From data centres to branch offices, our field engineers keep your systems running with minimal downtime.</p>
+            <div class="actions anim from-left" style="--d:.55s">
+              <a href="#solutions" class="btn btn--primary">Explore Our Solutions <span aria-hidden="true">&rarr;</span></a>
+              <a href="#contact" class="btn btn--ghost">Talk to an Engineer</a>
+            </div>
+          </div>
+          <div class="side anim from-right" style="--d:.5s">
+            <p>24/7 technical support wherever your team operates.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="slide" aria-roledescription="slide" aria-label="3 of 3">
+        <div class="slide__bg" style="background-image:url('Assets/images/hero-data-center.png')"></div>
+        <div class="slide__inner">
+          <div class="left">
+            <p class="eyebrow anim from-left" style="--d:.1s">IT Reselling &amp; Procurement</p>
+            <h1 class="anim from-left" style="--d:.25s">Global brands. <span>Genuine products.</span></h1>
+            <p class="lead anim from-left" style="--d:.4s">Servers, networking, computing and security from the world's leading manufacturers, at competitive pricing.</p>
+            <div class="actions anim from-left" style="--d:.55s">
+              <a href="#solutions" class="btn btn--primary">Explore Our Solutions <span aria-hidden="true">&rarr;</span></a>
+              <a href="#contact" class="btn btn--ghost">Talk to an Engineer</a>
+            </div>
+          </div>
+          <div class="side anim from-right" style="--d:.5s">
+            <p>Sourced, delivered and supported across 30+ African countries.</p>
+          </div>
+        </div>
+      </article>
+
+      <button class="arrow arrow--prev" aria-label="Previous slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+      <button class="arrow arrow--next" aria-label="Next slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+      <div class="dots" role="tablist" aria-label="Choose slide"></div>
+    </section>
+
+    <section class="ples-stats" aria-label="Company highlights">
+      <div class="ples-container">
+        <ul class="ples-stats__grid">
+          <li class="ples-stat ples-reveal" style="--ples-delay:0s">
+            <span class="ples-stat__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="9" width="30" height="30" rx="4"/><path d="M6 18h30M14 5v7M28 5v7"/><circle cx="36" cy="36" r="8" fill="#fff"/><path d="M36 31v5l3 2"/></svg></span>
+            <span><span class="ples-stat__num"><span data-ples-count="14">14</span>+</span><span class="ples-stat__label">Years of IT Service Delivery</span></span>
+          </li>
+          <li class="ples-stat ples-reveal" style="--ples-delay:.1s">
+            <span class="ples-stat__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="17"/><ellipse cx="24" cy="24" rx="7" ry="17"/><path d="M7 24h34M10 14h28M10 34h28"/></svg></span>
+            <span><span class="ples-stat__num"><span data-ples-count="30">30</span>+</span><span class="ples-stat__label">African Countries Supported</span></span>
+          </li>
+          <li class="ples-stat ples-reveal" style="--ples-delay:.2s">
+            <span class="ples-stat__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 28v-4a15 15 0 0130 0v4"/><rect x="6" y="26" width="8" height="12" rx="3"/><rect x="34" y="26" width="8" height="12" rx="3"/><path d="M38 38c0 4-4 6-10 6"/></svg></span>
+            <span><span class="ples-stat__num">24/7</span><span class="ples-stat__label">Technical Support</span></span>
+          </li>
+          <li class="ples-stat ples-reveal" style="--ples-delay:.3s">
+            <span class="ples-stat__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="36" height="10" rx="3"/><rect x="6" y="19" width="36" height="10" rx="3"/><rect x="6" y="32" width="36" height="10" rx="3"/><path d="M12 11h.01M12 24h.01M12 37h.01M30 11h8M30 24h8M30 37h8"/></svg></span>
+            <span><span class="ples-stat__num"><span data-ples-count="1000">1000</span>s+</span><span class="ples-stat__label">Infrastructure Assets Supported</span></span>
+          </li>
+          <li class="ples-stat ples-reveal" style="--ples-delay:.4s">
+            <span class="ples-stat__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l16 6v12c0 10-7 18-16 22C15 40 8 32 8 22V10z"/><path d="M16 24l6 6 11-12"/></svg></span>
+            <span><span class="ples-stat__num">2012</span><span class="ples-stat__label">Enterprise IT Operations Since</span></span>
+          </li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-    </div>
-  </header>
-
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/tech.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">I am Quadri Adisa</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Frontend  Developer, website Designer, Software Engineer"></span></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <main id="main">
-
-    <section id="about" class="about-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="assets/img/clearme.jpeg" class="img-fluid rounded b-shadow-a" alt="Quadri Adisa">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p><span class="title-s">Name: </span> <span>Quadri Adisa</span></p>
-                        <p><span class="title-s">Profile: </span> <span>Frontend developer</span></p>
-                        <p><span class="title-s">Email: </span> <span>adisaadegoke54@gmail.com</span></p>
-                        <p><span class="title-s">Phone: </span> <span>(+234) 816393-1801</span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-mf">
-                    <p class="title-s">Skill</p>
-                    <span>HTML</span> <span class="pull-right">85%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>CSS3</span> <span class="pull-right">75%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>JAVASCRIPT</span> <span class="pull-right">60%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>Reactjs</span> <span class="pull-right">60%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>Nextjs</span> <span class="pull-right">60%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        About me
-                      </h5>
-                    </div>
-                    <p class="lead">
-                      Website developer with proven experience in helping companies create and maintain a better reusable codebase. Passionate about learning and development with a desire to apply skills on a larger development team. Eager to tackle more complex problems and continue to find ways to maximize user efficiency. 
-                    </p>
-                    <p class="lead">
-                     Passionate about the world of the web and endowed with great curiosity. <!--  I am specialized in front-end development.  -->
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
-    <section id="services" class="services-mf pt-5 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Services
-              </h3>
-              <p class="subtitle-a">
-               What I do...
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
+    <section class="ples-services" id="solutions" aria-labelledby="ples-services-title">
+      <div class="ples-container ples-services__layout">
+        <div class="ples-services__intro ples-reveal">
+          <span class="ples-eyebrow">Our Services</span>
+          <h2 class="ples-title" id="ples-services-title">Comprehensive Technology Solutions</h2>
+          <p class="ples-lead">From product supply to full lifecycle support, we help businesses and governments stay connected, secure and productive.</p>
+          <a href="/services" class="ples-btn">Explore All Services <span aria-hidden="true">&rarr;</span></a>
         </div>
-        <div class="row">
-          <div class="col-md-3">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Website Design</h2>
-                <p class="s-description text-center">
-                  
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Web Development</h2>
-                <p class="s-description text-center">
-                  
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-search"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">SEO</h2>
-                <p class="s-description text-center"></p>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-3">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-filetype-js"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">javaScript tutor</h2>
-                <p class="s-description text-center"></p>
-              </div>
+        <ul class="ples-cards">
+          <!-- Change each --ples-img to your own photo -->
+          <li class="ples-card ples-reveal" style="--ples-delay:.1s">
+            <div class="ples-card__media" style="--ples-img:url('images/service-reselling.jpg')"></div>
+            <span class="ples-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11h10.2L20 7H6.2"/><circle cx="9" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg></span>
+            <div class="ples-card__body">
+              <h3 class="ples-card__title">IT Reselling &amp; Procurement</h3>
+              <p class="ples-card__text">Global brands. Genuine products. Competitive pricing.</p>
+              <a href="/services/it-reselling" class="ples-card__link">Explore Products <span aria-hidden="true">&rarr;</span></a>
             </div>
-          </div>
-        </div>
+          </li>
+
+          <li class="ples-card ples-reveal" style="--ples-delay:.2s">
+            <div class="ples-card__media" style="--ples-img:url('images/service-infrastructure.jpg')"></div>
+            <span class="ples-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4.5 4.5 0 01-.6-8.96A6 6 0 0118 10a4 4 0 010 8z"/><circle cx="12" cy="14" r="1.6"/></svg></span>
+            <div class="ples-card__body">
+              <h3 class="ples-card__title">Infrastructure Services</h3>
+              <p class="ples-card__text">Design. Deploy. Maintain.</p>
+              <a href="/services/infrastructure" class="ples-card__link">Explore Services <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </li>
+
+          <li class="ples-card ples-reveal" style="--ples-delay:.3s">
+            <div class="ples-card__media" style="--ples-img:url('images/service-motorola.jpg')"><span class=""></span></div>
+            <span class="ples-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="8" height="13" rx="2"/><path d="M12 8V3M9 12h6M5 6a8 8 0 000 6M19 6a8 8 0 010 6"/></svg></span>
+            <div class="ples-card__body">
+              <h3 class="ples-card__title">IT equipment Warehousing</h3>
+              <p class="ples-card__text">Professional communications for critical operations.</p>
+              <a href="/motorola-solutions" class="ples-card__link">Explore Warehousing <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </li>
+
+          <li class="ples-card ples-reveal" style="--ples-delay:.4s">
+            <div class="ples-card__media" style="--ples-img:url('images/service-tpm.jpg')"></div>
+            <span class="ples-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg></span>
+            <div class="ples-card__body">
+              <h3 class="ples-card__title">TPM &amp; Field Engineering</h3>
+              <p class="ples-card__text">Maximise uptime. Minimise risk.</p>
+              <a href="/services/tpm" class="ples-card__link">Explore TPM <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <!-- <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <h5 class="text-center hiretext">Do you need a frontend developer?</h5>
-      <a href="#contact" class="text-center anchored">Hire Me Today</a>
-    </div> -->
+    <section class="ples-products" aria-labelledby="ples-products-title">
+      <div class="ples-products__wrap">
 
-    <section id="work" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Portfolio
-              </h3>
-              <p class="subtitle-a">
-                My developments...
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
+        <div class="ples-products__intro">
+          <span class="ples-products__eyebrow">Our Products</span>
+          <h2 id="ples-products-title">Technology from the world's leading manufacturers</h2>
+          <p>We partner with global brands to deliver reliable, high-performance technology for your business.</p>
+          <a href="/products" class="ples-products__btn">View All Products <span aria-hidden="true">&rarr;</span></a>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <a href="https://admin-dashboard-c2c01.web.app/" target="_blank">
-              <div class="work-box">
-                <div class="work-img">
-                  <img src="assets/img/dashboardhome.png" alt="" class="img-fluid">
-                </div>
-                <div class="work-content">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h2 class="w-title">An Admin Dashboard</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory">Admin Dashboard Project</span>
-                      </div>
-                    </div>
-                    <!-- <div class="col-sm-4">
-                      <div class="w-like">
-                        <a href="projectonedetails.html"><span class="bi bi-plus-circle"></span></a>
-                      </div>
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
 
-          <div class="col-md-4">
-            <a href="https://lidstores.com/#/" target="_blank">
-              <div class="work-box">
-                <div class="work-img">
-                  <img src="assets/img/lidstores.png" alt="" class="img-fluid">
-                </div>
-                <div class="work-content">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h2 class="w-title">An E-commerce</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory">E-commerce Project</span>
-                      </div>
-                    </div>
-                    <!-- <div class="col-sm-4">
-                      <div class="w-like">
-                        <a href="projectonedetails.html"><span class="bi bi-plus-circle"></span></a>
-                      </div>
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-4">
-            <a href="https://newhavencarerecruitment.co.uk/" target="_blank">
-              <div class="work-box">
-                <div class="work-img">
-                  <img src="assets/img/havencare.png" alt="" class="img-fluid">
-                </div>
-                <div class="work-content">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h2 class="w-title">A care giver website</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory">A recruitment agency in UK</span>
-                      </div>
-                    </div>
-                    <!-- <div class="col-sm-4">
-                      <div class="w-like">
-                        <a href="projectonedetails.html"><span class="bi bi-plus-circle"></span></a>
-                      </div>
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-4">
-            <a href="https://www.zureinsurance.com/" target="_blank">
-              <div class="work-box">
-                <div class="work-img">
-                  <img src="assets/img/zureInsurance.png" alt="" class="img-fluid">
-                </div>
-                <div class="work-content">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h2 class="w-title">An Insurance website</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory" style="color:cornflowerblue;">I built a website for an  Insurance firm based in USA. I also help work on the admin dashboard for applicants and I also work on the admin portal.</span>
-                      </div>
-                    </div>
-                    <!-- <div class="col-sm-4">
-                      <div class="w-like">
-                        <a href="projectonedetails.html"><span class="bi bi-plus-circle"></span></a>
-                      </div>
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Loreda Cuno Nere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="ples-brands">
+          <!-- Put your logo files in a /logos folder (png) -->
+          <div class="ples-marquee" aria-label="Our technology partners">
+            <div class="ples-marquee__track">
+              <span class="ples-logo"><img src="Assets/images/logo_new/cisco.png" alt="Cisco" loading="lazy"></span>
+              <span class="ples-logo"><img src="Assets/images/logo_new/hp.png" alt="HP" loading="lazy"></span>
+              <span class="ples-logo"><img src="Assets/images/logo_new/dell.png" alt="Dell Technologies" loading="lazy"></span>
+              <span class="ples-logo"><img src="Assets/images/logo_new/lenovo.png" alt="Lenovo" loading="lazy"></span>
+              <span class="ples-logo"><img src="Assets/images/logo_new/motorola.png" alt="Motorola Solutions" loading="lazy"></span>
+              <span class="ples-logo"><img src="Assets/images/logo_new/aruba.png" alt="Aruba Networks" loading="lazy"></span>
+              <span class="ples-logo"><img src="Assets/images/logo_new/fortinet.png" alt="Fortinet" loading="lazy"></span>
+              <span class="ples-logo"><img src="Assets/images/logo_new/check-point.png" alt="Check Point" loading="lazy"></span>
+              <span class="ples-logo"><img src="Assets/images/logo_new/apc.png" alt="APC by Schneider Electric" loading="lazy"></span>
+              <span class="ples-logo"><img src="Assets/images/logo_new/eaton.png" alt="Eaton" loading="lazy"></span>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Mavrito Lana Dere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Bindo Laro Cado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-5.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Lena Mado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-6.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Big Bang</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
+          <ul class="ples-cats">
+            <li><b>Servers &amp; Storage</b><span>Dell | HP | Lenovo</span></li>
+            <li><b>Networking</b><span>Cisco | HP | Aruba</span></li>
+            <li><b>Computing</b><span>Dell | Lenovo</span></li>
+            <li><b>Security</b><span>Fortinet | Check Point</span></li>
+            <li><b>Power &amp; Infrastructure</b><span>APC | Vertiv | Eaton</span></li>
+          </ul>
         </div>
+
+        <aside class="ples-quote">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 2l9 5v10l-9 5-9-5V7zM3 7l9 5 9-5M12 12v10"/></svg>
+          <h3>Looking for a specific product?</h3>
+          <p>Our team can source it for you.</p>
+          <a href="#contact">Request a Quote <span aria-hidden="true">&rarr;</span></a>
+        </aside>
       </div>
     </section>
 
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Send Message 
-                      </h5>
-                    </div>
-                    <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
-                        Get in Touch
-                      </h5>
-                    </div>
-                    <div class="more-info">
-                      <p class="lead">
-                        Do you need a website developer? <strong> Hire me Today!</strong>
-                      </p>
-                      <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span> Lagos, Nigeria</li>
-                        <li><span class="bi bi-phone"></span> (+234) 8163-931801</li>
-                        <li><span class="bi bi-envelope"></span> adisaadegoke54@gmail.com</li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <section class="ples-ind" id="industries" aria-labelledby="ples-ind-title">
+      <!-- Icon sprite (hidden, reused below) -->
+      <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+        <symbol id="ples-i-oil" viewBox="0 0 24 24"><path d="M7 21l5-16 5 16M9.5 14h5M8.2 18h7.6M12 5V3"/></symbol>
+        <symbol id="ples-i-tel" viewBox="0 0 24 24"><circle cx="12" cy="10" r="1.5"/><path d="M12 11v10M9 21h6M8 8a5.5 5.5 0 000 6M16 8a5.5 5.5 0 010 6M5 5.5a9 9 0 000 11M19 5.5a9 9 0 010 11"/></symbol>
+        <symbol id="ples-i-bank" viewBox="0 0 24 24"><path d="M3 9l9-5 9 5zM5 9v9M9.5 9v9M14.5 9v9M19 9v9M3 21h18"/></symbol>
+        <symbol id="ples-i-gov" viewBox="0 0 24 24"><path d="M4 21h16M6 21v-8M10 21v-8M14 21v-8M18 21v-8M4 13h16M7 13a5 5 0 0110 0M12 3v3"/></symbol>
+        <symbol id="ples-i-bolt" viewBox="0 0 24 24"><path d="M13 2L5 14h6l-1 8 8-12h-6z"/></symbol>
+        <symbol id="ples-i-health" viewBox="0 0 24 24"><path d="M12 20s-8-4.7-8-10.5A4.5 4.5 0 0112 7a4.5 4.5 0 018 2.5C20 15.3 12 20 12 20z"/><path d="M6 12h3l1.5-2.5 2 4 1.5-1.5h3"/></symbol>
+        <symbol id="ples-i-edu" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5zM6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5M22 9v6"/></symbol>
+        <symbol id="ples-i-truck" viewBox="0 0 24 24"><path d="M2 6h11v10H2zM13 10h4l4 3v3h-8"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="16.5" cy="17.5" r="1.8"/></symbol>
+        <symbol id="ples-i-hat" viewBox="0 0 24 24"><path d="M3 17h18M5 17a7 7 0 0114 0M12 6v5M9 8v3M15 8v3M3 20h18"/></symbol>
+        <symbol id="ples-i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+      </defs></svg>
+
+  <!-- ===== Industries + Africa coverage ===== -->
+      <div class="ples-ind__left ples-ind__pad">
+        <div class="ples-ind__grid">
+
+          <div>
+            <span class="ples-ind__eyebrow">Industries</span>
+            <h2 id="ples-ind-title">Solutions for every industry</h2>
+            <p>We serve a wide range of industries across Africa, with tailored technology and support.</p>
+            <a href="/industries" class="ples-ind__btn">View Industries <span aria-hidden="true">&rarr;</span></a>
+
+            <ul class="ples-ind__list">
+              <li><a href="/industries/oil-gas"><svg class="ples-ico" aria-hidden="true"><use href="#ples-i-oil"/></svg><span>Oil &amp; Gas</span></a></li>
+              <li><a href="/industries/telecoms"><svg class="ples-ico" aria-hidden="true"><use href="#ples-i-tel"/></svg><span>Telecoms</span></a></li>
+              <li><a href="/industries/banking"><svg class="ples-ico" aria-hidden="true"><use href="#ples-i-bank"/></svg><span>Banking &amp; Financial Services</span></a></li>
+              <li><a href="/industries/government"><svg class="ples-ico" aria-hidden="true"><use href="#ples-i-gov"/></svg><span>Government</span></a></li>
+              <li><a href="/industries/energy"><svg class="ples-ico" aria-hidden="true"><use href="#ples-i-bolt"/></svg><span>Energy &amp; Utilities</span></a></li>
+              <li><a href="/industries/healthcare"><svg class="ples-ico" aria-hidden="true"><use href="#ples-i-health"/></svg><span>Healthcare</span></a></li>
+              <li><a href="/industries/education"><svg class="ples-ico" aria-hidden="true"><use href="#ples-i-edu"/></svg><span>Education</span></a></li>
+              <li><a href="/industries/transport"><svg class="ples-ico" aria-hidden="true"><use href="#ples-i-truck"/></svg><span>Transport &amp; Logistics</span></a></li>
+            </ul>
+          </div>
+
+          <div class="ples-ind__geo">
+            <!-- Stylised dotted map of Africa (swap for <img src="images/africa-map.png" alt="..."> if you have a real one) -->
+            <svg class="ples-map" viewBox="0 0 460 480" role="img" aria-labelledby="ples-map-t">
+              <title id="ples-map-t">Map of Africa showing PLES IT Services coverage in over 30 countries</title>
+              <defs>
+                <pattern id="ples-dots" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="4.5" cy="4.5" r="1.6" fill="#8fd12b"/></pattern>
+                <clipPath id="ples-africa"><path d="M100 70L140 48L200 45L250 58L275 72L300 92L335 98L375 108L395 135L388 165L372 190L385 220L420 240L450 262L430 290L405 320L385 355L360 395L335 425L300 440L270 430L255 395L255 355L240 320L215 295L195 300L165 280L130 275L110 245L85 215L72 175L65 140L75 105Z"/><ellipse cx="402" cy="372" rx="10" ry="26"/></clipPath>
+              </defs>
+              <rect width="460" height="480" fill="url(#ples-dots)" clip-path="url(#ples-africa)" opacity=".6"/>
+              <g fill="none" stroke="#8fd12b" stroke-width="1.2" opacity=".7">
+                <path class="ples-link" d="M105 85L168 270L255 305L370 290L310 400M168 270L345 110M345 110L370 290M105 85L345 110"/>
+              </g>
+              <g fill="#8fd12b">
+                <g transform="translate(105 85)"><circle r="4"/></g>
+                <g transform="translate(345 110)"><circle r="4"/></g>
+                <g transform="translate(168 270)"><circle r="5"/></g>
+                <g transform="translate(255 305)"><circle r="4"/></g>
+                <g transform="translate(370 290)"><circle r="4"/></g>
+                <g transform="translate(310 400)"><circle r="4"/></g>
+              </g>
+            </svg>
+            <div>
+              <span class="ples-ind__eyebrow">Africa-wide coverage</span>
+              <h3>On the ground across Africa.</h3>
+              <p>With a strong partner network and experienced field teams, we deliver support wherever you are.</p>
+              <a href="/about#footprint" class="ples-ind__btn">Our Footprint <span aria-hidden="true">&rarr;</span></a>
             </div>
           </div>
+
         </div>
+      </div>
+
+  <!-- ===== Motorola Solutions ===== -->
+      <aside class="ples-mot" aria-labelledby="ples-mot-title">
+        <img class="ples-mot__img" src="images/motorola-worker.jpg" width="640" height="560" loading="lazy"
+            alt="Field engineer wearing a hard hat and holding a Motorola two-way radio">
+        <div class="ples-ind__pad">
+          <div>
+            <span class="ples-mot__brand">MOTOROLA SOLUTIONS</span>
+            <h3 id="ples-mot-title">Professional communications for every environment.</h3>
+            <p>Two-way radios, digital systems, accessories and complete deployment &amp; support.</p>
+            <a href="/motorola-solutions" class="ples-ind__btn">Explore Motorola Solutions <span aria-hidden="true">&rarr;</span></a>
+          </div>
+          <ul class="ples-mot__list">
+            <li><svg class="ples-ico" aria-hidden="true"><use href="#ples-i-hat"/></svg><span>Construction</span></li>
+            <li><svg class="ples-ico" aria-hidden="true"><use href="#ples-i-shield"/></svg><span>Security</span></li>
+            <li><svg class="ples-ico" aria-hidden="true"><use href="#ples-i-oil"/></svg><span>Oil &amp; Gas</span></li>
+            <li><svg class="ples-ico" aria-hidden="true"><use href="#ples-i-truck"/></svg><span>Transport</span></li>
+            <li><svg class="ples-ico" aria-hidden="true"><use href="#ples-i-gov"/></svg><span>Government</span></li>
+          </ul>
+        </div>
+      </aside>
+
+      <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"Organization","name":"PLES IT Services Limited","url":"https://www.plesng.com",
+      "slogan":"Powering the world of IT","areaServed":"Africa",
+      "knowsAbout":["IT reselling","IT infrastructure","Field engineering","Motorola Solutions two-way radios","Oil and gas","Telecoms","Banking","Government","Healthcare","Education"]}
+      </script>
+    </section>
+
+    <section class="ples-cs" id="case-studies" aria-labelledby="ples-cs-title">
+      <div class="ples-cs__wrap">
+        <div class="ples-cs__intro">
+          <span class="ples-cs__eyebrow">Featured Case Studies</span>
+          <h2 id="ples-cs-title">Real Solutions. Measurable Results.</h2>
+          <p>From infrastructure deployment to IT reselling, our solutions help organisations operate more efficiently and securely.</p>
+          <a href="/case-studies" class="ples-cs__btn">View All Case Studies <span aria-hidden="true">&rarr;</span></a>
+        </div>
+
+        <ul class="ples-cs__list">
+          <li>
+            <article class="ples-cs__card">
+              <div class="ples-cs__media"><img src="images/case-network.jpg" width="640" height="360" loading="lazy" alt="Cisco network equipment installed in a server rack for an oil and gas client in Nigeria"></div>
+              <div class="ples-cs__body">
+                <span class="ples-cs__tag"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg>Network Infrastructure</span>
+                <h3>Cisco Network Deployment</h3>
+                <p class="ples-cs__meta">Oil &amp; Gas &nbsp;|&nbsp; Nigeria</p>
+                <p class="ples-cs__text">Improved network performance and uptime across multiple sites.</p>
+                <a href="/case-studies/cisco-network-deployment" class="ples-cs__link">View Case Study <span aria-hidden="true">&rarr;</span><span class="ples-sr">: Cisco Network Deployment</span></a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="ples-cs__card">
+              <div class="ples-cs__media"><img src="images/case-radio.jpg" width="640" height="360" loading="lazy" alt="Security team using Motorola two-way radios on site in Ghana"></div>
+              <div class="ples-cs__body">
+                <span class="ples-cs__tag"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="8" height="13" rx="2"/><path d="M12 8V3M9 12h6"/></svg>Motorola Solutions</span>
+                <h3>Radio Communication Solution</h3>
+                <p class="ples-cs__meta">Security &nbsp;|&nbsp; Ghana</p>
+                <p class="ples-cs__text">Enhanced team coordination and operational safety.</p>
+                <a href="/case-studies/radio-communication-solution" class="ples-cs__link">View Case Study <span aria-hidden="true">&rarr;</span><span class="ples-sr">: Radio Communication Solution</span></a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="ples-cs__card">
+              <div class="ples-cs__media"><img src="images/case-devices.jpg" width="640" height="360" loading="lazy" alt="Warehouse shelves stocked with laptops and accessories for a government device supply project"></div>
+              <div class="ples-cs__body">
+                <span class="ples-cs__tag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 11h10.2L20 7H6.2"/><circle cx="9" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg>IT Reselling &amp; Procurement</span>
+                <h3>End-User Device Supply</h3>
+                <p class="ples-cs__meta">Government &nbsp;|&nbsp; Nigeria</p>
+                <p class="ples-cs__text">Timely delivery of 1,000+ laptops and accessories.</p>
+                <a href="/case-studies/end-user-device-supply" class="ples-cs__link">View Case Study <span aria-hidden="true">&rarr;</span><span class="ples-sr">: End-User Device Supply</span></a>
+              </div>
+            </article>
+          </li>
+        </ul>
       </div>
     </section>
-  </main>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>Q</strong>. All Rights Reserved</p>
-            <div class="credits">
-              Designed by Quadri Adisa</a>
-            </div>
-          </div>
+    <section class="ples-cta" id="contact" aria-labelledby="ples-cta-title">
+      <img class="ples-cta__img" src="images/cta-engineer.jpg" width="560" height="260" loading="lazy"
+        alt="PLES field engineer in a hard hat and safety vest working in a data centre">
+      <div class="ples-cta__wrap">
+        <span aria-hidden="true"></span>
+
+        <div class="ples-cta__text">
+          <span class="ples-cta__eyebrow">Partner with PLES</span>
+          <h2 id="ples-cta-title">Your technology partner in Africa.</h2>
+          <p>Get in touch with our team today for tailored solutions, competitive pricing and expert support.</p>
         </div>
+
+        <a href="/contact" class="ples-cta__btn">Talk to an Engineer <span aria-hidden="true">&rarr;</span></a>
+
+        <ul class="ples-cta__links">
+          <li><a href="/contact?topic=sales">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>Sales Enquiries</a></li>
+          <li><a href="/contact?topic=support">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0116 0v2"/><rect x="2" y="14" width="4" height="6" rx="1.5"/><rect x="18" y="14" width="4" height="6" rx="1.5"/><path d="M20 20c0 1.5-2 2-5 2"/></svg>Technical Support</a></li>
+          <li><a href="/contact?topic=logistics">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h11v10H2zM13 10h4l4 3v3h-8"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="16.5" cy="17.5" r="1.8"/></svg>Logistics Support</a></li>
+        </ul>
       </div>
-    </div>
-  </footer>
+      <footer class="ples-footer" id="footer">
+          <!-- Section 1: links, social, address -->
+          <div class="ples-footer__wrap ples-footer__main">
+            <div class="ples-footer__brand">
+              <a href="/" class="ples-footer__logo" aria-label="PLES IT Services home">
+                <img src="Assets/images/ples-logo.png" width="160" height="64" loading="lazy" alt="Ples - Powering the world of IT">
+              </a>
+              <!-- Accredited body logo: change the file name, alt text and (optional) link -->
+              <a href="#" class="ples-footer__logo ples-footer__logo--body" rel="noopener noreferrer" aria-label="Visit our accreditation body">
+                <img src="Assets/images/logo_new/ASCDI-MEMBER.png" width="120" height="64" loading="lazy" alt="ASCDI-MEMBER Accredited Body - ASCDI">
+              </a>
+            </div>
+            <nav aria-labelledby="ples-f-quick">
+              <h3 id="ples-f-quick">Quick Links</h3>
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Motorola Solutions</a></li>
+              </ul>
+            </nav>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+            <nav aria-labelledby="ples-f-company">
+              <h3 id="ples-f-company">Company</h3>
+              <ul>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Insights</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Client Portal</a></li>
+              </ul>
+            </nav>
 
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/js/main.js"></script>
+            <nav aria-labelledby="ples-f-support">
+              <h3 id="ples-f-support">Support</h3>
+              <ul>
+                <li><a href="">Service Centre</a></li>
+                <li><a href="">Report an Incident</a></li>
+                <li><a href="">FAQs</a></li>
+              </ul>
+            </nav>
+
+            <div class="ples-footer__follow">
+              <h3 id="ples-f-follow">Follow Us</h3>
+              <ul class="ples-social" aria-labelledby="ples-f-follow">
+                <li><a href="https://www.linkedin.com/company/YOUR-PAGE" target="_blank" rel="noopener noreferrer me" aria-label="PLES IT Services on LinkedIn">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.01 5 2.5 2.5 0 01.01-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.84-2.1 3.8-2.1 4.06 0 4.8 2.67 4.8 6.14V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21h-4z"/></svg></a></li>
+                <li><a href="https://x.com/YOUR-HANDLE" target="_blank" rel="noopener noreferrer me" aria-label="PLES IT Services on X (Twitter)">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.3L5.3 21H2.2l7.2-8.3L2 3h6.4l4.4 5.8zM16.7 19.2h1.7L7.4 4.7H5.6z"/></svg></a></li>
+                <li><a href="https://www.facebook.com/YOUR-PAGE" target="_blank" rel="noopener noreferrer me" aria-label="PLES IT Services on Facebook">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.8c0-.9.3-1.5 1.6-1.5h1.7V3.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.4H7.6V13h2.8v8z"/></svg></a></li>
+                <li><a href="https://www.instagram.com/YOUR-HANDLE" target="_blank" rel="noopener noreferrer me" aria-label="PLES IT Services on Instagram">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M7.5 2h9A5.5 5.5 0 0122 7.5v9a5.5 5.5 0 01-5.5 5.5h-9A5.5 5.5 0 012 16.5v-9A5.5 5.5 0 017.5 2zm0 2A3.5 3.5 0 004 7.5v9A3.5 3.5 0 007.5 20h9a3.5 3.5 0 003.5-3.5v-9A3.5 3.5 0 0016.5 4zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6zm5.25-3.25a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z"/></svg></a></li>
+              </ul>
+            </div>
+
+            <address class="ples-footer__contact">
+              <strong>PLES IT SERVICES LIMITED</strong>
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                <span>31B Oluwole Lawson Street, Ijegun Road, Off Ikotun, Lagos, NG</span>
+              </span>
+              <a href="">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>servicecenter@plesng.com</a>
+              <a href="">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>www.plesng.com</a>
+            </address>
+          </div>
+
+            <!-- Section 2: copyright bar -->
+              <div class="ples-footer__bar">
+                <div class="ples-footer__wrap">
+                  <p>&copy; <span id="ples-year">2026</span> PLES IT Services Limited. All rights reserved.</p>
+                  <ul>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms of Use</a></li>
+                  </ul>
+                </div>
+              </div>
+      </footer>
+    </section>
+
+
+    <script src="scripts/slider_scripts.js"></script>
+    <script src="scripts/fade_script.js"></script>
+    <script src="scripts/get_fullYear_script.js"></script>
+    <script src="scripts/header_script.js"></script>
 </body>
-
 </html>
-
-
-<!-- Choose the option that scares you; it's the path to growth. -->
-
-
-
-
-
-
-

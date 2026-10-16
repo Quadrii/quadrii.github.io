@@ -1,0 +1,114 @@
+.ph-hero, .ph-hero *{box-sizing:border-box}
+  .ph-hero{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) clamp(240px,23%,320px);
+    background:#07120d;
+    color:#ffffff;
+    font-family:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+    height:clamp(340px,calc(100vh - 150px),430px);
+    overflow:hidden;
+  }
+  .ph-hero h1,.ph-hero p,.ph-hero ul,.ph-hero li,.ph-hero span,.ph-hero a{margin:0;padding:0}
+  .ph-hero__text{
+    margin-bottom: 12px !important;
+  }
+  .ph-hero__tagline{
+    padding-top: 12px !important;
+    border-left: 2px solid #6fb01a;
+    margin-left: 10px;
+  }
+  .ph-hero__main{
+    position:relative;
+    display:flex;
+    align-items:center;
+    padding:0 clamp(20px,5.6vw,80px);
+    background:
+      linear-gradient(90deg,rgba(7,18,13,.96) 0%,rgba(7,18,13,.82) 38%,rgba(7,18,13,.25) 70%,rgba(7,18,13,.05) 100%),
+      url("../Assets/images/hero-data-center.png") right center/cover no-repeat;
+    isolation:isolate;
+  }
+  .ph-hero__main::after{
+    content:"";position:absolute;top:0;right:0;bottom:0;width:90px;z-index:-1;
+    background:linear-gradient(90deg,transparent,rgba(7,18,13,.7));
+  }
+  .ph-hero__copy{max-width:540px;padding:24px 0}
+  .ph-hero__eyebrow{
+    display:block;
+    color:#8fd12b;
+    font-size:.8rem;font-weight:500;letter-spacing:.04em;
+    text-transform:uppercase;margin-bottom:10px;
+  }
+  .ph-hero__title{
+    font-size:clamp(1.9rem,3.7vw,2.9rem);
+    line-height:1.12;font-weight:700;letter-spacing:-.01em;
+    margin-bottom:18px;color:#ffffff;
+  }
+  .ph-hero__title span{display:block;color:#8fd12b}
+  .ph-hero__text{
+    font-size:clamp(.82rem,1.05vw,.92rem);
+    line-height:1.65;font-weight:400;
+    color:rgba(255,255,255,.92);
+    max-width:500px;margin-bottom:22px;
+  }
+  .ph-hero a.ph-hero__btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:16px;
+    min-height:46px;
+    padding:0 22px;
+    background:#8fd12b;
+    color:#07120d;
+    font-family:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+    font-size:15px;font-weight:600;line-height:1;letter-spacing:0;
+    text-transform:none;text-decoration:none;
+    border:0;border-radius:4px;
+    box-shadow:none;
+    cursor:pointer;
+    transition:background .2s ease;
+  }
+  .ph-hero a.ph-hero__btn:hover{background:#6fb01a;color:#07120d;text-decoration:none}
+  .ph-hero a.ph-hero__btn:focus-visible{outline:2px solid #ffffff;outline-offset:3px}
+  .ph-hero a.ph-hero__btn svg{width:20px;height:20px;flex:none;display:block;stroke:#07120d;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+  .ph-hero__panel{
+    background:linear-gradient(180deg,#0a1a12 0%,#06100b 100%);
+    display:flex;flex-direction:column;justify-content:center;
+    padding:24px clamp(18px,2.4vw,34px);
+    border-left:1px solid rgba(143,209,43,.12);
+  }
+  .ph-hero__tagline{
+    position:relative;
+    font-size:clamp(1rem,1.5vw,1.2rem);
+    font-weight:500;line-height:1.3;color:#ffffff;
+    margin-bottom:22px;
+  }
+  .ph-hero__tagline::before{
+    content:"";position:absolute;top:0;left:0;
+    width:34px;height:2px;background:#8fd12b;
+  }
+  .ph-hero__values{list-style:none;display:grid;gap:15px}
+  .ph-hero__values li{
+    display:flex;align-items:center;gap:14px;
+    font-size:.85rem;font-weight:500;color:#ffffff;
+  }
+  .ph-hero__values svg{
+    width:30px;height:30px;flex:none;
+    stroke:#8fd12b;fill:none;stroke-width:1.6;
+    stroke-linecap:round;stroke-linejoin:round; 
+  }
+
+  @media (max-width:900px){
+    .ph-hero{grid-template-columns:1fr;height:auto}
+    .ph-hero__main{min-height:380px;padding:48px 24px}
+    .ph-hero__main::after{display:none}
+    .ph-hero__panel{padding:28px 24px;border-left:0;border-top:1px solid rgba(143,209,43,.12)}
+    .ph-hero__values{grid-template-columns:1fr 1fr;gap:18px 20px}
+  }
+  @media (max-width:520px){
+    .ph-hero__main{
+      background:
+        linear-gradient(180deg,rgba(7,18,13,.7),rgba(7,18,13,.94)),
+        url("../Assets/images/hero-data-center.png") 70% center/cover no-repeat;
+    }
+    .ph-hero__values{grid-template-columns:1fr}
+    .ph-hero a.ph-hero__btn{width:100%}
+  }
+  @media (prefers-reduced-motion:reduce){.ph-hero *{transition:none!important}}

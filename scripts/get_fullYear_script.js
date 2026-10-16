@@ -1,0 +1,1 @@
+document.getElementById('ples-year').textContent = new Date().getFullYear();
