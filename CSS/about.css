@@ -17,7 +17,13 @@ body{font-family:var(--font);color:var(--ink)}
   .ples-ab a:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
   .ples-ab__wrap{max-width:1280px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}
   .ples-ab__eyebrow{display:block;color:var(--lime-dark);font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
-  .ples-ab h2{font-size:clamp(1.6rem,2.8vw,2.1rem);line-height:1.2;font-weight:700;color:var(--ink)}
+  .ples-ab h2{
+    font-size: 20px;
+    /* font-size:clamp(1.6rem,2.8vw,2.1rem); */
+    line-height:1.2;
+    font-weight:600;
+    color:var(--ink)
+  }
   .ples-ab__ico{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 
 
@@ -26,7 +32,12 @@ body{font-family:var(--font);color:var(--ink)}
     background:var(--white);
     padding:clamp(40px,6vw,20px) 0}
   .ples-ab-story .ples-ab__wrap{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:clamp(24px,3vw,44px);align-items:center}
-  .ples-ab-story__text p{margin-top:16px;font-size:.88rem;line-height:1.7;color:#4a5a52}
+  .ples-ab-story__text p{
+    margin-top:16px;
+    font-size:13.5px;
+    line-height:1.7;
+    color:#4a5a52
+  }
   .ples-ab-purpose{position:relative;overflow:hidden;border-radius:12px;color:var(--white);min-height:300px;display:flex;flex-direction:column;
     justify-content:space-between;padding:26px;background-size:cover;background-position:center;
     background-image:var(--ples-img),linear-gradient(145deg,#1d4a2a,#0a1a14)}
