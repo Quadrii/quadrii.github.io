@@ -28,7 +28,7 @@
   .ples-stat:first-child{border-left:0;padding-left:0}
   .ples-stat__icon{flex:none;width:clamp(38px,3.6vw,50px);height:clamp(38px,3.6vw,50px);color:var(--ples-lime-dark)}
   .ples-stat__icon svg{width:100%;height:100%}
-  .ples-stat__num{display:block;font-size:clamp(1.3rem,2.2vw,1.75rem);font-weight:700;line-height:1.1;color:var(--ples-ink)}
+  .ples-stat__num{display:block;font-size:clamp(1.3rem,2.2vw,1.75rem);font-weight:600;line-height:1.1;color:var(--ples-ink)}
   .ples-stat__label{display:block;margin-top:2px;font-size:clamp(.7rem,1vw,.8rem);color:var(--ples-muted);line-height:1.35}
 
   /* ================= SERVICES ================= */
@@ -44,7 +44,7 @@
   font-size:.75rem;font-weight:700;letter-spacing:.14em;
   text-transform:uppercase;margin-bottom:14px}
   .ples-title{margin:0;font-size:clamp(1.8rem,3.2vw,2.35rem);
-  line-height:1.15;font-weight:700;color:var(--ples-ink);
+  line-height:1.15;font-weight:600;color:var(--ples-ink);
   letter-spacing:-.01em}
   .ples-lead{margin:18px 0 26px;
   font-size:.95rem;line-height:1.65;
@@ -118,7 +118,7 @@
     display:grid;grid-template-columns:260px minmax(0,1fr) 230px;gap:clamp(20px,2.5vw,32px);align-items:center}
 
   .ples-products__eyebrow{color:var(--lime-dark);font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
-  .ples-products h2{margin:12px 0;font-size:clamp(1.6rem,2.8vw,2rem);line-height:1.2;font-weight:700}
+  .ples-products h2{margin:12px 0;font-size:clamp(1.6rem,2.8vw,2rem);line-height:1.2;font-weight:600}
   .ples-products__intro p{margin-bottom:22px;font-size:.92rem;line-height:1.6;color:#5b6b63}
   .ples-products__btn{display:inline-flex;align-items:center;gap:10px;padding:13px 24px;border-radius:8px;
     background:var(--lime);color:var(--ink);border:1.5px solid var(--lime);font:600 .88rem var(--font);
@@ -181,7 +181,7 @@
   .ples-ind a:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
   .ples-ind__pad{padding:clamp(32px,5vw,56px) clamp(16px,4vw,48px)}
   .ples-ind__eyebrow{display:block;color:var(--lime);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
-  .ples-ind h2,.ples-ind h3{font-weight:700;line-height:1.2}
+  .ples-ind h2,.ples-ind h3{font-weight:600;line-height:1.2}
   .ples-ind p{font-size:.88rem;line-height:1.6;color:rgba(255,255,255,.8)}
   .ples-ind__btn{display:inline-flex;align-items:center;gap:10px;margin-top:20px;padding:11px 20px;border-radius:8px;
     border:1.5px solid var(--lime);background:rgba(143,209,43,.12);color:var(--lime);font:600 .82rem var(--font);
@@ -248,7 +248,7 @@
     display:grid;grid-template-columns:260px minmax(0,1fr);gap:clamp(24px,3vw,40px);align-items:start}
 
   .ples-cs__eyebrow{display:block;color:var(--lime-dark);font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
-  .ples-cs h2{font-size:clamp(1.7rem,3vw,2.2rem);line-height:1.15;font-weight:700}
+  .ples-cs h2{font-size:clamp(1.7rem,3vw,2.2rem);line-height:1.15;font-weight:600}
   .ples-cs__intro p{margin:14px 0 22px;font-size:.92rem;line-height:1.6;color:#5b6b63}
   .ples-cs__btn{display:inline-flex;align-items:center;gap:10px;padding:13px 24px;border-radius:8px;background:var(--lime);
     border:1.5px solid var(--lime);color:var(--ink);font:600 .88rem var(--font);text-decoration:none;transition:background .2s,transform .2s}
@@ -297,7 +297,7 @@
 
   .ples-cta__eyebrow{display:flex;align-items:center;gap:8px;color:var(--lime);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
   .ples-cta__eyebrow::before{content:"";width:8px;height:8px;background:var(--lime);border-radius:2px}
-  .ples-cta h2{font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.2;font-weight:700}
+  .ples-cta h2{font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.2;font-weight:600}
   .ples-cta__text p{margin-top:10px;max-width:520px;font-size:.9rem;line-height:1.6;color:rgba(255,255,255,.85)}
 
   .ples-cta__btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:8px;background:var(--lime);

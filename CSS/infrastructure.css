@@ -38,7 +38,7 @@
   .ples-if-crumb a:hover{color:var(--lime)}
   .ples-if-hero .ples-if__eyebrow{display:flex;align-items:center;gap:10px;color:var(--lime);font-size:.8rem}
   .ples-if-hero .ples-if__eyebrow::before{content:"";width:12px;height:2px;background:var(--lime)}
-  .ples-if-hero h1{font-size:clamp(2.3rem,5.4vw,3.8rem);line-height:1.05;font-weight:800;letter-spacing:-.02em}
+  .ples-if-hero h1{font-size:clamp(2.3rem,5.4vw,3.8rem);line-height:1.05;font-weight:600;letter-spacing:-.02em}
   .ples-if-hero h1 span{display:block;color:var(--lime)}
   .ples-if-hero__lead{margin:18px 0 26px;max-width:520px;font-size:clamp(.9rem,1.25vw,1rem);line-height:1.65;color:rgba(255,255,255,.93)}
   .ples-if-hero__actions{display:flex;flex-wrap:wrap;gap:14px}

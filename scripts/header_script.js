@@ -5,7 +5,11 @@
   const mq = matchMedia('(max-width:1180px)');
 
   function closeMenus(except){
-    items.forEach(i => { if (i !== except){ i.classList.remove('open'); i.querySelector('button').setAttribute('aria-expanded','false'); } });
+    items.forEach(
+      i => { if (i !== except){ 
+      i.classList.remove('open');
+      i.querySelector('button').setAttribute('aria-expanded','false'); 
+    } });
   }
   items.forEach(item => {
     const btn = item.querySelector('button');
@@ -13,12 +17,13 @@
       const open = !item.classList.contains('open');
       closeMenus(item);
       item.classList.toggle('open', open);
-      btn.setAttribute('aria-expanded', open);
+      btn.setAttribute('aria-expanded', open); 
     });
   });
 
   function setDrawer(open){
     nav.classList.toggle('open', open);
+    break;
     burger.setAttribute('aria-expanded', open);
     burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     document.body.classList.toggle('nav-locked', open && mq.matches);
